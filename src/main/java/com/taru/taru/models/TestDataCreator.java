@@ -14,8 +14,14 @@ public class TestDataCreator {
 
     private JSONArray _transactions = new JSONArray();
 
-    public TestDataCreator() {
+    private static TestDataCreator _instance = new TestDataCreator();
+
+    private TestDataCreator() {
         createTestData();
+    }
+
+    public static TestDataCreator getInstance() {
+        return _instance;
     }
 
     public JSONArray getData() {
@@ -23,12 +29,12 @@ public class TestDataCreator {
     }
 
     private void createTestData() {
-//        createPaycheckData();
-//        createCellularData();
-//        createDaycareData();
-//        createRentData();
-//        createCarInsuranceData();
-//        createHealthInsuranceData();
+        createPaycheckData();
+        createCellularData();
+        createDaycareData();
+        createRentData();
+        createCarInsuranceData();
+        createHealthInsuranceData();
         createGrociriesData();
 
 

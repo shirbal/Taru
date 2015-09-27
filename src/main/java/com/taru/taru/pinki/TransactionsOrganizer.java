@@ -24,62 +24,73 @@ import java.util.Map;
  */
 public class TransactionsOrganizer {
 
-    private static final String DESCRIPTION = "Description";
-
-
     public TransactionViewModel[] create(JSONArray arr) {
-        Map<String,List<JSONObject>> categorys = sortByCategory(arr);
-        Map<String, Map<Integer,List<JSONObject>>> categoryByMonths = new Hashtable<>();
-        Iterator<Map.Entry<String, List<JSONObject>>> iterator = categorys.entrySet().iterator();
-        while(iterator.hasNext()) {
-            Map.Entry<String, List<JSONObject>> next = iterator.next();
-            List<JSONObject> value = next.getValue();
-            String category = next.getKey();
-
-            Map<Integer, List<JSONObject>> integerListMap = devideToMonths(value, 12);
-            categoryByMonths.put(category,integerListMap);
-        }
-
-        Iterator<Map.Entry<String, Map<Integer, List<JSONObject>>>> iterator1 = categoryByMonths.entrySet().iterator();
-        int size = 0;
+        Map<String, Map<Integer, List<JSONObject>>> categoryByMonths = new Hashtable<>();
+        mapCategoriesAndMonths(arr, categoryByMonths);
         List<TransactionsModel> models = new ArrayList<>();
-        while(iterator1.hasNext()) {
-            Map.Entry<String, Map<Integer, List<JSONObject>>> next = iterator1.next();
+        int size = createTransactionsModel(categoryByMonths, models);
+        TransactionViewModel[] res = new TransactionViewModel[size];
+        createTransactionsViewModels(models, res);
+        return res;
+    }
+
+    private int createTransactionsModel(Map<String, Map<Integer, List<JSONObject>>> categoryByMonths,
+                                        List<TransactionsModel> models) {
+        Iterator<Map.Entry<String, Map<Integer, List<JSONObject>>>> iterator =
+                categoryByMonths.entrySet().iterator();
+        int size = 0;
+
+        while (iterator.hasNext()) {
+            Map.Entry<String, Map<Integer, List<JSONObject>>> next = iterator.next();
             Map<Integer, List<JSONObject>> value = next.getValue();
-            TransactionsModel model = getTransactionsPrediction(value,next.getKey());
+            TransactionsModel model = getTransactionsPrediction(value, next.getKey());
             size += model.getTransactions().size();
             models.add(model);
         }
+        return size;
+    }
 
+    private void createTransactionsViewModels(List<TransactionsModel> models, TransactionViewModel[] res) {
 
-        TransactionViewModel[] res = new TransactionViewModel[size];
         int i = 0;
-        for(TransactionsModel model : models) {
+        for (TransactionsModel model : models) {
             List<Pair<Integer, Double>> transactions = model.getTransactions();
             String category = model.getCategory();
-            for(Pair<Integer,Double> pair : transactions) {
+            for (Pair<Integer, Double> pair : transactions) {
                 String date = DateUtils.createDateFromDay(pair.first);
                 double amount = pair.second;
-                TransactionViewModel viewModel = new TransactionViewModel(category,date,amount);
+                TransactionViewModel viewModel = new TransactionViewModel(category, date, amount);
                 res[i] = viewModel;
                 i++;
             }
         }
-
-        return res;
     }
 
-    public Map<String,List<JSONObject>> sortByCategory(JSONArray arr) {
-        Map<String,List<JSONObject>> result = new Hashtable<>();
+    private void mapCategoriesAndMonths(JSONArray arr, Map<String,
+            Map<Integer, List<JSONObject>>> categoryByMonths) {
+        Map<String, List<JSONObject>> categories = sortByCategory(arr);
+        Iterator<Map.Entry<String, List<JSONObject>>> iterator = categories.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, List<JSONObject>> next = iterator.next();
+            List<JSONObject> value = next.getValue();
+            String category = next.getKey();
+
+            Map<Integer, List<JSONObject>> integerListMap = divideToMonths(value);
+            categoryByMonths.put(category, integerListMap);
+        }
+    }
+
+    private Map<String, List<JSONObject>> sortByCategory(JSONArray arr) {
+        Map<String, List<JSONObject>> result = new Hashtable<>();
         try {
-            for(int i = 0; i < arr.length(); i++) {
+            for (int i = 0; i < arr.length(); i++) {
                 JSONObject object = (JSONObject) arr.get(i);
                 String description = object.get(Transaction.DESCRIPTION).toString();
                 description = Formatter.manipulateDescription(description);
                 List<JSONObject> currentList = result.get(description);
-                if(currentList == null) {
+                if (currentList == null) {
                     currentList = new ArrayList<>();
-                    result.put(description,currentList);
+                    result.put(description, currentList);
                 }
                 currentList.add(object);
             }
@@ -89,14 +100,14 @@ public class TransactionsOrganizer {
         return result;
     }
 
-    public Map<Integer,List<JSONObject>> devideToMonths(List<JSONObject> trans, int numOfMonths) {
-        Map<Integer,List<JSONObject>> byMonth = new Hashtable<>();
-        for(JSONObject obj : trans) {
+    private Map<Integer, List<JSONObject>> divideToMonths(List<JSONObject> trans) {
+        Map<Integer, List<JSONObject>> byMonth = new Hashtable<>();
+        for (JSONObject obj : trans) {
             int month = getMonth(obj);
             List<JSONObject> currentMonth = byMonth.get(month);
-            if(currentMonth == null) {
+            if (currentMonth == null) {
                 currentMonth = new ArrayList<>();
-                byMonth.put(month,currentMonth);
+                byMonth.put(month, currentMonth);
             }
             currentMonth.add(obj);
         }
@@ -104,7 +115,7 @@ public class TransactionsOrganizer {
         return byMonth;
     }
 
-    public TransactionsModel getTransactionsPrediction(Map<Integer,List<JSONObject>> transByMonth, String category) {
+    private TransactionsModel getTransactionsPrediction(Map<Integer, List<JSONObject>> transByMonth, String category) {
         int max = getMaxOfTransactionPerMonth(transByMonth);
         int columns = transByMonth.size() + 1;
         double[][] amounts = new double[max][columns];
@@ -113,29 +124,29 @@ public class TransactionsOrganizer {
         calcAverageAmounts(amounts, columns);
         calcAverageDates(days, columns);
         TransactionsModel transactions = new TransactionsModel(category);
-        transactions.add(amounts,days);
+        transactions.add(amounts, days);
         return transactions;
     }
 
-    public void calcAverageDates(double[][] dates, int columns) {
+    private void calcAverageDates(double[][] dates, int columns) {
         calcAverage(dates, columns);
     }
 
-    public void calcAverageAmounts(double[][] amounts, int columns) {
+    private void calcAverageAmounts(double[][] amounts, int columns) {
         calcAverage(amounts, columns);
     }
 
     private void calcAverage(double[][] arr, int indexOfResults) {
-        for(int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             int numOfMonths = 0;
             int sum = 0;
-            for(int j = 0; j < indexOfResults - 1; j++) {
-                if(arr[i][j] != 0) {
+            for (int j = 0; j < indexOfResults - 1; j++) {
+                if (arr[i][j] != 0) {
                     sum += arr[i][j];
                     numOfMonths++;
                 }
             }
-            arr[i][indexOfResults-1] = sum / numOfMonths;
+            arr[i][indexOfResults - 1] = sum / numOfMonths;
         }
     }
 
@@ -143,11 +154,11 @@ public class TransactionsOrganizer {
         int i = 0;
         int j = 0;
         Iterator<Map.Entry<Integer, List<JSONObject>>> iterator = transByMonth.entrySet().iterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             Map.Entry<Integer, List<JSONObject>> next = iterator.next();
             double key = next.getKey();
             List<JSONObject> transactionForThisMonth = next.getValue();
-            for(JSONObject tran : transactionForThisMonth) {
+            for (JSONObject tran : transactionForThisMonth) {
                 try {
                     String amountStr = tran.get(Transaction.TRANSACTION_AMOUNT).toString();
                     String dateAndTimeStr = tran.get(Transaction.DATE_POSTED).toString();
@@ -171,8 +182,8 @@ public class TransactionsOrganizer {
 
     private int getMaxOfTransactionPerMonth(Map<Integer, List<JSONObject>> transByMonth) {
         int max = 0;
-        for(List<JSONObject> obj : transByMonth.values()) {
-            if(obj.size() > max) {
+        for (List<JSONObject> obj : transByMonth.values()) {
+            if (obj.size() > max) {
                 max = obj.size();
             }
         }
@@ -187,17 +198,11 @@ public class TransactionsOrganizer {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        if(monthFromDate == null) {
+        if (monthFromDate == null) {
             monthFromDate = DateUtils.getCurrentMonth();
         }
         return monthFromDate;
     }
-
-
-
-
-
-
 
 
 }

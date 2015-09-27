@@ -4,19 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.taru.taru.citi.utils.RestApiCaller;
 import com.taru.taru.models.TestDataCreator;
 import com.taru.taru.pinki.TransactionsOrganizer;
 import com.taru.taru.views.TransactionAdapter;
 import com.taru.taru.views.TransactionViewModel;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private TransactionViewModel[] createData() {
-        TestDataCreator creator = new TestDataCreator();
+        TestDataCreator creator = TestDataCreator.getInstance();
         TransactionsOrganizer org = new TransactionsOrganizer();
         TransactionViewModel[] transactionViewModels = org.create(creator.getData());
         return transactionViewModels;
