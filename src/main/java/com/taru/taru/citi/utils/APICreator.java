@@ -47,6 +47,27 @@ public class APICreator {
         }
     }
 
+    public static HttpURLConnection createShiranAPITest(String method) {
+        HttpURLConnection connection = null;
+        try {
+            URL url = createShiranApi();
+            connection = (HttpURLConnection)url.openConnection();
+            connection.setRequestMethod(method);
+           // connection.setRequestProperty(CONTENT_TYPE, APPLICATION_JSON);
+
+            //connection.setDoOutput(true);
+            connection.setDoInput(true);
+            connection.setChunkedStreamingMode(0);
+        } catch (IOException e) {
+            e.printStackTrace();
+            if(connection != null) {
+                connection.disconnect();
+            }
+        }
+
+        return connection;
+    }
+
     public static HttpURLConnection createConnection(String method) {
         HttpURLConnection connection = null;
         try {
@@ -132,26 +153,33 @@ public class APICreator {
     }
 
     @NonNull
-    private static String createBasicUrlAsString(String action) {
+    private static String createBasicUrlAsString(String host, String action,boolean needClientID) {
         StringBuilder str = new StringBuilder();
-        str.append(HOST);
+        str.append(host);
         str.append(action);
-        appendClientID(str);
+        if (needClientID) {
+            appendClientID(str);
+        }
         return str.toString();
     }
 
     private static URL createLogin() {
-        String basicUrlAsString = createBasicUrlAsString(LOGIN);
+        String basicUrlAsString = createBasicUrlAsString(HOST,LOGIN,true);
         return createBasicURL(basicUrlAsString);
     }
 
     private static URL createAccounts() {
-        String basicUrlAsString = createBasicUrlAsString(ACCOUNTS);
+        String basicUrlAsString = createBasicUrlAsString(HOST,ACCOUNTS,true);
+        return createBasicURL(basicUrlAsString);
+    }
+
+    private static URL createShiranApi() {
+        String basicUrlAsString = createBasicUrlAsString("http://192.168.1.106:8888","/greeting",false);
         return createBasicURL(basicUrlAsString);
     }
 
     private static URL createTransactions(String accountID) {
-        String basicUrlAsString = createBasicUrlAsString(TRANSACTIONS);
+        String basicUrlAsString = createBasicUrlAsString(HOST,TRANSACTIONS,true);
         basicUrlAsString = basicUrlAsString.replace(ACCOUNT_ID,accountID);
         return createBasicURL(basicUrlAsString);
     }

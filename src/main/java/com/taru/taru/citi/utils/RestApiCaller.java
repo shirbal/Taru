@@ -30,6 +30,24 @@ public class RestApiCaller {
         return _caller;
     }
 
+    public String getTestData() {
+        String response = "";
+        try {
+            HttpURLConnection connection = APICreator.createShiranAPITest(APICreator.GET_METHOD);
+            connection.connect();
+            int status = connection.getResponseCode();
+            if (status == HttpURLConnection.HTTP_OK) {
+                response = readResponse(connection);
+                connection.disconnect();
+            }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        return response;
+    }
+
     public String login() {
         String token = "";
         try {
