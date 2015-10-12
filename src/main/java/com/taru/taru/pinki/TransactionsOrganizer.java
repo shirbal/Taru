@@ -132,7 +132,7 @@ public class TransactionsOrganizer {
         calcAverage(dates, columns);
     }
 
-    private void calcAverageAmounts(double[][] amounts, int columns) {
+    public void calcAverageAmounts(double[][] amounts, int columns) {
         calcAverage(amounts, columns);
     }
 

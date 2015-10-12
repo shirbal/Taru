@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TransactionViewModel data[] = null;
-        TransactionAdapter adapter = new TransactionAdapter(this,
-                R.layout.transaction_template, data);
-        listView1 = (ListView)findViewById(R.id.listView1);
-        listView1.setAdapter(adapter);
+//        TransactionViewModel data[] = null;
+//        TransactionAdapter adapter = new TransactionAdapter(this,
+//                R.layout.transaction_template, data);
+//        listView1 = (ListView)findViewById(R.id.listView1);
+//        listView1.setAdapter(adapter);
 
 
 
@@ -35,17 +35,18 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
 
 
-                final TransactionViewModel[] data1 = createData();
-
+                //final TransactionViewModel[] data1 = createData();
+                final String testData = RestApiCaller.getInstance().getTestData();
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        //TextView viewById = (TextView) findViewById(R.id.shiranTest);
-                        //viewById.setText(testData);
-                        TransactionAdapter adapter1 = (TransactionAdapter)listView1.getAdapter();
-                        for(int i = 0; i < data1.length; i++) {
-                            adapter1.add(data1[i]);
-                        }
+
+                        TextView viewById = (TextView) findViewById(R.id.shiranTest);
+                        viewById.setText(testData);
+//                        TransactionAdapter adapter1 = (TransactionAdapter)listView1.getAdapter();
+//                        for(int i = 0; i < data1.length; i++) {
+//                            adapter1.add(data1[i]);
+//                        }
                     }
                 });
             }

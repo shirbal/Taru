@@ -9,7 +9,7 @@ import java.util.Date;
  * Created by Shiran Maor on 9/26/2015.
  */
 public class TransactionsOrganizerTest extends TestCase {
-    TransactionsOrganizer org = new TransactionsOrganizer();
+    TransactionsOrganizer orge = new TransactionsOrganizer();
 
     public void testCalcAverageAmounts() throws Exception {
         double[][] arr = {
@@ -18,12 +18,12 @@ public class TransactionsOrganizerTest extends TestCase {
                           {100,20,30,0},
                           {200,0,0,0}
                         };
-        org.calcAverageAmounts(arr,4);
+        orge.calcAverageAmounts(arr,4);
     }
 
     public void testFromStringToDate() throws Exception{
         String date = "2015-07-21";
-        Date dateFromStr = org.createDateFromStr(date);
+        Date dateFromStr = null;//orge.createDateFromStr(date);
         assertEquals(21,dateFromStr.getDate());
         assertEquals(2015, dateFromStr.getYear());
     }
@@ -36,7 +36,7 @@ public class TransactionsOrganizerTest extends TestCase {
                 {new Date(2015,04,22),new Date(2015,05,20),null,null}
         };
 
-        org.calcAverageDates(arr,4);
+        //orge.calcAverageDates(arr,4);
 
 
 

@@ -174,7 +174,7 @@ public class APICreator {
     }
 
     private static URL createShiranApi() {
-        String basicUrlAsString = createBasicUrlAsString("http://192.168.1.106:8888","/greeting",false);
+        String basicUrlAsString = createBasicUrlAsString("http://192.168.1.106:8080","/categ/Groceries",false);
         return createBasicURL(basicUrlAsString);
     }
 
