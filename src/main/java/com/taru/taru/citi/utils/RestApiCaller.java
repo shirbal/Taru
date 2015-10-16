@@ -1,6 +1,10 @@
 package com.taru.taru.citi.utils;
 
 
+import android.util.JsonReader;
+
+import com.taru.taru.models.Transaction;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,6 +18,12 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created by smaor on 9/22/2015.
@@ -30,14 +40,17 @@ public class RestApiCaller {
         return _caller;
     }
 
-    public String getTestData() {
-        String response = "";
+    public Map<String, List<Transaction>> getData(UrlCreator url, String method) {
+
+        Map<String, List<Transaction>> res = null;
         try {
-            HttpURLConnection connection = APICreator.createShiranAPITest(APICreator.GET_METHOD);
+            HttpURLConnection connection = APICreator.createConnection(method,url);
             connection.connect();
             int status = connection.getResponseCode();
             if (status == HttpURLConnection.HTTP_OK) {
-                response = readResponse(connection);
+                String readResponse = readResponse(connection);
+
+                res = parseResponse(readResponse);
                 connection.disconnect();
             }
         } catch (MalformedURLException e) {
@@ -45,90 +58,42 @@ public class RestApiCaller {
         } catch (IOException e1) {
             e1.printStackTrace();
         }
-        return response;
+        return res;
     }
 
-    public String login() {
-        String token = "";
-        try {
-            HttpURLConnection connection = APICreator.createConnection(APICreator.POST_METHOD);
-            fillRequest(connection);
-            connection.connect();
-            int status = connection.getResponseCode();
-            JSONObject response = null;
-            if (status == HttpURLConnection.HTTP_OK) {
-                response = readJSONObject(connection);
-                if(response != null) {
-                    token = response.get(TOKEN).toString();
+    private Map<String, List<Transaction>> parseResponse(String readResponse) {
+        Map<String, List<Transaction>> result = new HashMap<>();
+        try
+        {
+
+            JSONObject categoriesObject = new JSONObject(readResponse);
+            Iterator<String> keys = categoriesObject.keys();
+            while(keys.hasNext()) {
+                String categoryName = keys.next();
+                List<Transaction> transactions = new ArrayList<>();
+
+                Object categoryTransactionObject = categoriesObject.get(categoryName);
+                JSONArray transactionsArray = new JSONArray(categoryTransactionObject.toString());
+                int length = transactionsArray.length();
+                for(int i = 0; i < length; i++) {
+                    Object transactionObject = transactionsArray.get(i);
+                    JSONObject transactionJson = new JSONObject(transactionObject.toString());
+                    Transaction transaction = readTransaction(transactionJson);
+                    transactions.add(transaction);
                 }
-                connection.disconnect();
+                result.put(categoryName,transactions);
+
+
             }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }catch (JSONException jsonEx) {
-            jsonEx.printStackTrace();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();;
         }
-        return token;
+        return result;
     }
 
-    public JSONArray getAccounts(String token) {
-        JSONArray accounts = null;
-        try {
-
-            HttpURLConnection connection = APICreator.createAccountsConnection(APICreator.GET_METHOD, token);
-            connection.connect();
-            int status = connection.getResponseCode();
-            JSONArray response = null;
-            if (status == HttpURLConnection.HTTP_OK) {
-                accounts = readJSONArray(connection);
-                connection.disconnect();
-            }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-        return accounts;
-    }
-
-    public String getTransactions(String token, String accountID) {
-        String transcations = "";
-        try {
-
-            HttpURLConnection connection = APICreator.createTransactionsConnection(APICreator.GET_METHOD, token, accountID);
-            connection.connect();
-            int status = connection.getResponseCode();
-            JSONArray response = null;
-            if (status == HttpURLConnection.HTTP_OK) {
-                response = readJSONArray(connection);
-                if(response != null) {
-                    transcations = response.toString();
-                }
-                connection.disconnect();
-            }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-        return transcations;
-    }
-
-    private void fillRequest(HttpURLConnection connection) {
-        BufferedWriter out;
-        try {
-            String jsonStr = APICreator.getUserJsonStrRes();
-            OutputStream outputStream = connection.getOutputStream();
-            out = new BufferedWriter(new OutputStreamWriter(outputStream, UTF_8));
-            out.write(jsonStr);
-            out.flush();
-            out.close();
-            outputStream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    private Transaction readTransaction(JSONObject transactinoJson) {
+        return new Transaction(transactinoJson);
     }
 
     private String readResponse(HttpURLConnection connection) {
@@ -137,7 +102,6 @@ public class RestApiCaller {
             InputStream inputStream = connection.getInputStream();
             if (inputStream != null) {
                 BufferedReader buff = new BufferedReader(new InputStreamReader(inputStream));
-
                 String inputLine = "";
                 StringBuilder res = new StringBuilder("");
                 try {
@@ -177,6 +141,9 @@ public class RestApiCaller {
     }
 
     private JSONArray getJSONArrayFromString(String str) {
+
+
+
         JSONArray obj = null;
         try {
             obj = new JSONArray(str);

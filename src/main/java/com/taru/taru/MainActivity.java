@@ -1,64 +1,89 @@
 package com.taru.taru;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+//import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
+import com.taru.taru.citi.utils.APICreator;
 import com.taru.taru.citi.utils.RestApiCaller;
-import com.taru.taru.models.TestDataCreator;
-import com.taru.taru.pinki.TransactionsOrganizer;
+import com.taru.taru.citi.utils.UrlCreator;
+import com.taru.taru.models.Transaction;
 import com.taru.taru.views.TransactionAdapter;
 import com.taru.taru.views.TransactionViewModel;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private ListView listView1;
+    private Context cont;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        listView1 = (ListView)findViewById(R.id.listView1);
+        cont = this;
+        try {
+            new Thread(new Runnable() {
+                public void run() {
+                    final TransactionViewModel[] data1 = createData();
 
-//        TransactionViewModel data[] = null;
-//        TransactionAdapter adapter = new TransactionAdapter(this,
-//                R.layout.transaction_template, data);
-//        listView1 = (ListView)findViewById(R.id.listView1);
-//        listView1.setAdapter(adapter);
-
-
-
-        new Thread(new Runnable() {
-            public void run() {
-
-
-                //final TransactionViewModel[] data1 = createData();
-                final String testData = RestApiCaller.getInstance().getTestData();
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        TextView viewById = (TextView) findViewById(R.id.shiranTest);
-                        viewById.setText(testData);
-//                        TransactionAdapter adapter1 = (TransactionAdapter)listView1.getAdapter();
-//                        for(int i = 0; i < data1.length; i++) {
-//                            adapter1.add(data1[i]);
-//                        }
-                    }
-                });
-            }
-        }).start();
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            TransactionAdapter adapter = new TransactionAdapter(cont, R.layout.transaction_template, data1);
+                            listView1.setAdapter(adapter);
+                        }
+                    });
+                }
+            }).start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
     private TransactionViewModel[] createData() {
-        TestDataCreator creator = TestDataCreator.getInstance();
-        TransactionsOrganizer org = new TransactionsOrganizer();
-        TransactionViewModel[] transactionViewModels = org.create(creator.getData());
-        return transactionViewModels;
+        UrlCreator url = new UrlCreator();
+        url.append(UrlCreator.TRANSACTINOS);
+        ArrayList<TransactionViewModel> transactionViewModels = new ArrayList<>();
+        Map<String, List<Transaction>> data = RestApiCaller.getInstance().getData(url, APICreator.GET_METHOD);
+
+        Set<Map.Entry<String, List<Transaction>>> entries = data.entrySet();
+
+        Iterator<Map.Entry<String, List<Transaction>>> iterator = entries.iterator();
+        while(iterator.hasNext()) {
+            Map.Entry<String, List<Transaction>> next = iterator.next();
+            String categoryName = next.getKey();
+            List<Transaction> transactions = next.getValue();
+            Iterator<Transaction> iterator1 = transactions.iterator();
+            while(iterator1.hasNext()) {
+                Transaction next1 = iterator1.next();
+                TransactionViewModel item = new TransactionViewModel(categoryName,
+                                                                     next1.getDate(),
+                                                                     next1.getAmount());
+                transactionViewModels.add(item);
+            }
+
+        }
+
+        TransactionViewModel[] res = new TransactionViewModel[transactionViewModels.size()];
+        Iterator<TransactionViewModel> iterator1 = transactionViewModels.iterator();
+        int i = 0;
+        while(iterator1.hasNext()) {
+            TransactionViewModel next = iterator1.next();
+            res[i] = next;
+            i++;
+        }
+        return res;
     }
 
     @Override

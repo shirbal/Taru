@@ -50,9 +50,11 @@ public class TransactionAdapter extends ArrayAdapter<TransactionViewModel> {
         }
 
         TransactionViewModel transactionViewModel = data[position];
-        holder.category.setText(transactionViewModel.getCategory());
-        holder.date.setText(transactionViewModel.getDate());
-        holder.amount.setText(Double.toString(transactionViewModel.getAmount()));
+        if (transactionViewModel != null) {
+            holder.category.setText(transactionViewModel.getCategory());
+            holder.date.setText(transactionViewModel.getDate());
+            holder.amount.setText(Double.toString(transactionViewModel.getAmount()));
+        }
 
         return row;
     }
