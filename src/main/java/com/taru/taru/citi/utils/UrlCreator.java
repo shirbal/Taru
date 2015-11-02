@@ -12,7 +12,7 @@ public class UrlCreator {
     private static final String DEFAULT_PORT = ":8080";
 
     public static final String ALL_MONTHS = "/months";
-    public static final String TRANSACTINOS = "/trans";
+    public static final String TRANSACTINOS = "/projected";
     public static final String TRANSACTION_BY_CATEGORY = "/categ/{catgoryName}";
 
     private StringBuilder urlStr = new StringBuilder();

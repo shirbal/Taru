@@ -2,6 +2,7 @@ package com.taru.taru.views;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.taru.taru.R;
-import com.taru.taru.models.Transaction;
+import com.taru.taru.models.enums.TransactionType;
 
 /**
  * Created by Shiran Maor on 9/26/2015.
@@ -51,6 +52,15 @@ public class TransactionAdapter extends ArrayAdapter<TransactionViewModel> {
 
         TransactionViewModel transactionViewModel = data[position];
         if (transactionViewModel != null) {
+            if(transactionViewModel.getType() == TransactionType.OUT) {
+                holder.category.setTextColor(Color.RED);
+                holder.date.setTextColor(Color.RED);
+                holder.amount.setTextColor(Color.RED);
+            } else {
+                holder.category.setTextColor(Color.GREEN);
+                holder.date.setTextColor(Color.GREEN);
+                holder.amount.setTextColor(Color.GREEN);
+            }
             holder.category.setText(transactionViewModel.getCategory());
             holder.date.setText(transactionViewModel.getDate());
             holder.amount.setText(Double.toString(transactionViewModel.getAmount()));

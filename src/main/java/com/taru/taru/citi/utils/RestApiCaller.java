@@ -40,9 +40,9 @@ public class RestApiCaller {
         return _caller;
     }
 
-    public Map<String, List<Transaction>> getData(UrlCreator url, String method) {
+    public List<Transaction> getData(UrlCreator url, String method) {
 
-        Map<String, List<Transaction>> res = null;
+        List<Transaction> res = null;
         try {
             HttpURLConnection connection = APICreator.createConnection(method,url);
             connection.connect();
@@ -61,33 +61,22 @@ public class RestApiCaller {
         return res;
     }
 
-    private Map<String, List<Transaction>> parseResponse(String readResponse) {
-        Map<String, List<Transaction>> result = new HashMap<>();
+    private List<Transaction> parseResponse(String readResponse) {
+        List<Transaction> result = new ArrayList<>();
         try
         {
-
-            JSONObject categoriesObject = new JSONObject(readResponse);
-            Iterator<String> keys = categoriesObject.keys();
-            while(keys.hasNext()) {
-                String categoryName = keys.next();
-                List<Transaction> transactions = new ArrayList<>();
-
-                Object categoryTransactionObject = categoriesObject.get(categoryName);
-                JSONArray transactionsArray = new JSONArray(categoryTransactionObject.toString());
-                int length = transactionsArray.length();
-                for(int i = 0; i < length; i++) {
-                    Object transactionObject = transactionsArray.get(i);
-                    JSONObject transactionJson = new JSONObject(transactionObject.toString());
-                    Transaction transaction = readTransaction(transactionJson);
-                    transactions.add(transaction);
-                }
-                result.put(categoryName,transactions);
-
+            JSONArray transactions = new JSONArray(readResponse);
+            int length = transactions.length();
+            for(int i = 0; i < length; i++) {
+                Object transactionObject = transactions.get(i);
+                JSONObject transactionJson = new JSONObject(transactionObject.toString());
+                Transaction transaction = readTransaction(transactionJson);
+                result.add(transaction);
 
             }
 
         } catch (Exception ex) {
-            ex.printStackTrace();;
+            ex.printStackTrace();
         }
         return result;
     }
