@@ -1,328 +1,304 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
+
     tools:context=".MainActivity"
     android:background="@color/white">
 
+
     <LinearLayout
+        android:id="@+id/progress_bar_layout"
+        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="35dp"
-        android:background="#237cf8">
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:touchscreenBlocksFocus="true">
+
+       <ProgressBar
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"/>
+
         <TextView
+            android:text="Loading your History..."
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/blue"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/main_layout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/month_header_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="#0a98f4">
+
+            <TextView
+                android:id="@+id/month_header"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="September 2015"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:autoText="true"
+                android:background="#0a98f4"
+
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/totals_layout"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:orientation="horizontal"
+            android:background="#dddddd">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+
+                android:layout_weight="1.5"
+                android:backgroundTint="@color/white"
+                android:baselineAligned="true"
+                android:gravity="left">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="End of Month Balance"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#282828" />
+
+                <TextView
+                    android:id="@+id/total_balance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#282828"
+                    android:textIsSelectable="true"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Total Expenses"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:textColor="#e95b47"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/total_expenses"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textSize="12dp"
+                        android:textColor="#e95b47"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Total Income"
+                        android:layout_weight="1"
+                        android:textColor="#2dbe9b"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="8dp" />
+
+                    <TextView
+                        android:id="@+id/total_income"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textColor="#2dbe9b"
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:text="September 2015"
-            android:gravity="center"
-            android:textSize="20dp" />
+            android:layout_weight="1.02"
+            android:visibility="visible"
+            android:background="#eceff1"
+            style="@style/shiran">
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:orientation="horizontal"
-        android:background="#e3d9d9">
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-
-            android:layout_weight="1.5"
-            android:backgroundTint="@color/white"
-            android:baselineAligned="true"
-            android:gravity="left">
-            <TextView
-                android:layout_width="fill_parent"
+            <CalendarView
+                android:id="@+id/calendar"
                 android:layout_height="fill_parent"
-                android:text="End of Month Balance"
-                android:layout_weight="1"
-                android:textSize="11dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:textColor="#090808" />
-
-            <TextView
-                android:id="@+id/total_balance"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
 
-                android:layout_weight="1"
-                android:text="-600$"
-                android:textSize="12dp"
-                android:layout_marginLeft="25dp"
-                android:textColor="#0f0e0e" />
+                android:background="@color/gray_light"
+                android:longClickable="true"
+                style="@style/shiran" />
 
+            <!--<ListView-->
+            <!--android:id="@+id/listView1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" />-->
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/day_details_lay"
+            android:orientation="horizontal"
+            android:background="#060606"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
+            android:layout_height="120dp"
+            android:visibility="gone">
 
-            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:text="Total Expenses"
-                    android:layout_weight="1"
-                    android:textSize="12dp"
-                    android:textColor="#dd5f5f"
-                    android:layout_marginTop="10dp" />
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
 
                 <TextView
-                    android:id="@+id/total_expenses"
+                    android:id="@+id/date_selected"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:textSize="12dp"
-                    android:textColor="#dd5f5f"
                     android:layout_weight="1"
-                    android:text="$1900"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Today&apos;s Balance:"
+                    android:layout_weight="1.1"
+                    android:textColor="#0a98f4"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="15dp" />
+                    android:textSize="13dp" />
+
+                <!--<TextView-->
+
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:text="to Today:"-->
+                    <!--android:layout_weight="1.1"-->
+                    <!--android:textColor="#0a98f4"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textSize="10dp" />-->
+
+                <TextView
+                    android:id="@+id/balance_up_today"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#0a98f4"
+                    android:textSize="20dp" />
+
             </LinearLayout>
 
             <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp">
 
-                android:layout_weight="1">
-                <TextView
+
+                <ListView
+                    android:id="@+id/daily_list"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"></ListView>
+
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:text="Total Income"
-                    android:layout_weight="1"
-                    android:textColor="#4dc77b"
-                    android:textSize="12dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="8dp" />
+                    android:layout_weight="2">
 
-                <TextView
-                    android:id="@+id/total_income"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:textColor="#4dc77b"
-                    android:textSize="12dp"
-                    android:layout_weight="1"
-                    android:text="$1600"
-                    android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="Total"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/daily_total"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
 
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.02"
-        android:visibility="visible">
-
-        <!--<CalendarView-->
-        <!--android:id="@+id/calendar"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_width="fill_parent"-->
-
-        <!--android:background="@color/grey"-->
-        <!--/>-->
-
-        <ListView
-            android:id="@+id/listView1"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/day_details_lay"
-        android:orientation="horizontal"
-        android:background="#060606"
-        android:layout_width="fill_parent"
-        android:layout_height="120dp"
-        android:visibility="gone">
-
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1.5"
-            android:orientation="vertical"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp">
-
-
-            <TextView
-                android:id="@+id/date_selected"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:text="09.23.2015"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
-
-            <TextView
-
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="Balance Up"
-                android:layout_weight="1.1"
-                android:textColor="#fb0c78fc"
-                android:layout_marginTop="10dp"
-                android:textSize="10dp" />
-
-            <TextView
-
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="to Today:"
-                android:layout_weight="1.1"
-                android:textColor="#fb0c78fc"
-                android:layout_marginBottom="5dp"
-                android:textSize="10dp" />
-
-            <TextView
-
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="-$200"
-                android:layout_weight="1"
-                android:textColor="#fb4c94ee"
-                android:textSize="20dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
+
+            android:id="@+id/enter_amount_layout"
+            android:visibility="visible"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="30dp">
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-                <TextView
-                    android:text="Cloths"
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:textColor="#dc4141"
-                    android:textSize="12dp" />
-
-                <TextView
-                    android:text="$200"
-                    android:layout_weight="1"
-                    android:layout_height="fill_parent"
-                    android:layout_width="fill_parent"
-                    android:textColor="#dc4141"
-                    android:layout_marginLeft="30dp"
-                    android:textSize="12dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-                <TextView
-                    android:text="Cellular"
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:textColor="#dc4141"
-                    android:textSize="12dp" />
-
-                <TextView
-                    android:text="$200"
-                    android:layout_weight="1"
-                    android:layout_height="fill_parent"
-                    android:layout_width="fill_parent"
-                    android:textColor="#dc4141"
-                    android:layout_marginLeft="30dp"
-                    android:textSize="12dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-                <TextView
-                    android:text="Groceries"
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:textColor="#dc4141"
-                    android:textSize="12dp" />
-
-                <TextView
-                    android:text="$200"
-                    android:layout_weight="1"
-                    android:layout_height="fill_parent"
-                    android:layout_width="fill_parent"
-                    android:textColor="#dc4141"
-                    android:layout_marginLeft="30dp"
-                    android:textSize="12dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1">
-
-                <TextView
-                    android:text="Total"
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:textColor="@color/white"
-                    android:textSize="18dp" />
-
-                <TextView
-                    android:text="$200"
-                    android:layout_weight="1"
-                    android:layout_height="fill_parent"
-                    android:layout_width="fill_parent"
-                    android:textColor="@color/white"
-                    android:layout_marginLeft="30dp"
-                    android:textSize="18dp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/enter_amount"
-        android:visibility="visible"
-        android:layout_width="fill_parent"
-        android:layout_height="55dp"
-        android:background="@color/white"
-        android:orientation="horizontal"
-        android:layout_weight="0.01">
+            android:layout_height="@dimen/enterAmount_big"
+            android:background="@color/gray_light"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -333,17 +309,26 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:text="Amount to Spend:"
-                    android:textSize="14dp" />
+                    android:textSize="14dp"
+                    android:textIsSelectable="false"
+                    android:textColor="#282828"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp" />
 
                 <EditText
-                    android:id="@+id/amount_to_spend_text"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:id="@+id/enter_amount"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
                     android:layout_weight="1"
                     android:inputType="numberDecimal"
-                    android:textColor="#de1818" />
+                    android:textColor="@color/red"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="4"
+                    android:textAlignment="center" />
 
             </LinearLayout>
 
@@ -353,20 +338,138 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
+                <!--<TextView-->
+                    <!--android:id="@+id/amount_to_spend_button"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:clickable="true"-->
+                    <!--android:text="Find a Day"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textColor="#f6b32e"-->
+                    <!--android:gravity="center" />-->
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
                     android:id="@+id/amount_to_spend_button"
+                    android:src="@drawable/findaday"
+                    android:nestedScrollingEnabled="false"
+                    android:adjustViewBounds="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/enter_amount_daily_layout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/enterAmount_big"
+            android:background="@color/gray_light"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enter Amount:"
+                    android:textSize="14dp"
+                    android:textIsSelectable="false"
+                    android:textColor="#282828"
+                    android:layout_marginLeft="40dp" />
+
+                <EditText
+                    android:id="@+id/enter_amount_daily"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/red"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="4"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:clickable="true"
-                    android:text="Find a Day"
-                    android:textSize="20dp"
-                    android:textColor="#d37f17"
-                    android:gravity="center" />
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/daily_expenses"
+                        android:src="@drawable/expenses"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="right" />
+
+                    <TextView
+                        android:text="Expense"
+                        android:textColor="@color/red"
+                        android:layout_width="fill_parent"
+                        android:layout_height="15dp"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="20dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/daily_income"
+                        android:src="@drawable/income"
+
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:text="Income"
+                        android:textColor="@color/green"
+                        android:layout_width="fill_parent"
+                        android:layout_height="15dp"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+
+
 
             </LinearLayout>
 
 
         </LinearLayout>
+
+    </LinearLayout>
 
 
 </LinearLayout>

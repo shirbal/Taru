@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.taru.taru.R;
 import com.taru.taru.models.enums.TransactionType;
 
+import java.util.List;
+
 /**
  * Created by Shiran Maor on 9/26/2015.
  */
@@ -19,9 +21,9 @@ public class TransactionAdapter extends ArrayAdapter<TransactionViewModel> {
 
     Context context;
     int layoutResourceId;
-    TransactionViewModel data[] = null;
+    List<TransactionViewModel> data = null;
 
-    public TransactionAdapter(Context context, int layoutResourceId, TransactionViewModel[] data) {
+    public TransactionAdapter(Context context, int layoutResourceId, List<TransactionViewModel> data) {
         super(context,layoutResourceId,data);
         this.layoutResourceId = layoutResourceId;
         this.context = context;
@@ -50,7 +52,7 @@ public class TransactionAdapter extends ArrayAdapter<TransactionViewModel> {
             holder = (TransactionHolder)row.getTag();
         }
 
-        TransactionViewModel transactionViewModel = data[position];
+        TransactionViewModel transactionViewModel = data.get(position);
         if (transactionViewModel != null) {
             if(transactionViewModel.getType() == TransactionType.OUT) {
                 holder.category.setTextColor(Color.RED);

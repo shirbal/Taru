@@ -2,161 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="150dp"
-    android:background="#060606">
+    android:layout_height="fill_parent"
+    android:background="#060606" >
 
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1.5"
-        android:orientation="vertical"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp">
-
-
-        <TextView
-            android:id="@+id/date_selected"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:text="09.23.2015"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
-        <TextView
-
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:text="Balance Up"
-            android:layout_weight="1.1"
-            android:textColor="#fb0c78fc"
-            android:layout_marginTop="10dp" />
-
-        <TextView
-
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:text="to Today:"
-            android:layout_weight="1.1"
-            android:textColor="#fb0c78fc"
-            android:layout_marginBottom="5dp" />
-
-        <TextView
-
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:text="-$200"
-            android:layout_weight="1"
-            android:textColor="#fb4c94ee"
-            android:textSize="30dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+    <TextView
+        android:text="Shiran"
+        android:id="@+id/daily_category"
         android:layout_weight="1"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="30dp">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="@color/red"
+        android:layout_marginTop="5dp"/>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1">
-
-            <TextView
-                android:text="Cloths"
-                android:layout_weight="1"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#dc4141" />
-
-            <TextView
-                android:text="$200"
-                android:layout_weight="1"
-                android:layout_height="fill_parent"
-                android:layout_width="fill_parent"
-                android:textColor="#dc4141"
-                android:layout_marginLeft="30dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1">
-
-            <TextView
-                android:text="Cellular"
-                android:layout_weight="1"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#dc4141" />
-
-            <TextView
-                android:text="$200"
-                android:layout_weight="1"
-                android:layout_height="fill_parent"
-                android:layout_width="fill_parent"
-                android:textColor="#dc4141"
-                android:layout_marginLeft="30dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1">
-
-            <TextView
-                android:text="Groceries"
-                android:layout_weight="1"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#dc4141" />
-
-            <TextView
-                android:text="$200"
-                android:layout_weight="1"
-                android:layout_height="fill_parent"
-                android:layout_width="fill_parent"
-                android:textColor="#dc4141"
-                android:layout_marginLeft="30dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1">
-
-            <TextView
-                android:text="Total"
-                android:layout_weight="1"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="@color/white"
-                android:textSize="18dp" />
-
-            <TextView
-                android:text="$200"
-                android:layout_weight="1"
-                android:layout_height="fill_parent"
-                android:layout_width="fill_parent"
-                android:textColor="@color/white"
-                android:layout_marginLeft="30dp"
-                android:textSize="18dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
+    <TextView
+        android:text="100"
+        android:id="@+id/daily_amount"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:textColor="@color/red"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"/>
 
 </LinearLayout>
