@@ -125,7 +125,7 @@ public class TransactionUtil {
             Date key = next.getKey();
             String dateStr = DateUtils.dateToString(key);
             total+=next.getValue();
-            total = NumbersUtil.round(total,2);
+            total = NumbersUtil.round(total,0);
             balances.put(dateStr,total);
         }
     }
@@ -133,7 +133,7 @@ public class TransactionUtil {
     private static DailyTransactionViewModel transactionToDailyModel(Transaction transaction) {
         TransactionType type = transaction.getType();
         String category = transaction.getCategory();
-        double amount = transaction.getAmount();
+        double amount = NumbersUtil.round(transaction.getAmount(),2);
         DailyTransactionViewModel newModel = new DailyTransactionViewModel(category,amount,type);
         return newModel;
     }

@@ -8,6 +8,8 @@ import java.text.DecimalFormat;
 public class NumbersUtil {
 
     public static double round(double num, int digits) {
+        digits = 0;
+
         StringBuilder str = new StringBuilder("#");
         if(digits > 0) {
             str.append(".");
@@ -24,6 +26,8 @@ public class NumbersUtil {
             ex.printStackTrace();
         }
         return res;
+
+
 
     }
 }

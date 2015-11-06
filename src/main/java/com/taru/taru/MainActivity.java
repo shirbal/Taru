@@ -26,6 +26,9 @@ import com.taru.taru.models.enums.TransactionType;
 import com.taru.taru.utils.DateUtils;
 import com.taru.taru.utils.NumbersUtil;
 import com.taru.taru.utils.TransactionUtil;
+import com.taru.taru.vdesmet.lib.calendar.DayAdapter;
+import com.taru.taru.vdesmet.lib.calendar.OnDayClickListener;
+import com.taru.taru.views.CustomDayAdapter;
 import com.taru.taru.views.DailyTransactionAdapter;
 import com.taru.taru.views.DailyTransactionViewModel;
 import com.taru.taru.views.TextsClickListener;
@@ -34,6 +37,7 @@ import com.taru.taru.views.TransactionViewModel;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -78,6 +82,7 @@ public class MainActivity extends Activity {
     private Double _totalIncome;
     private Double _totalBalance;
 
+
     private Map<String, Pair<Double,List<DailyTransactionViewModel>>> _daysToTransactions = new HashMap<>();
     private Map<String,Double> _dateToBalance = new HashMap<>();
     private Map<String, Pair<Double,List<DailyTransactionViewModel>>> _addedTransactions = new HashMap<>();
@@ -85,7 +90,7 @@ public class MainActivity extends Activity {
     private TextsClickListener hiderListener;
 
     private boolean _foundADay = false;
-
+    com.taru.taru.vdesmet.lib.calendar.CalendarView singleMonth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +98,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+        super.onCreate(savedInstanceState);
+        initializeNewCalendar();
+
+
         _cont = this;
         initializeLayouts();
         initializeTextViews();
@@ -101,12 +111,82 @@ public class MainActivity extends Activity {
         initializeEditText();
         initializeListeners();
 
-        initializeCalendar();
+        //initializeCalendar();
         getDataOnBackground();
 
 
+    }
+
+    private void initializeNewCalendar() {
+        //setContentView(R.layout.shiran);
+
+        // Retrieve the CalendarView
+        singleMonth =
+                (com.taru.taru.vdesmet.lib.calendar.CalendarView) findViewById(R.id.single_calendar);
 
 
+        // Set the first valid day
+        final Calendar firstValidDay = Calendar.getInstance();
+        firstValidDay.set(Calendar.YEAR, 2015);
+        firstValidDay.set(Calendar.MONTH, 8);
+        firstValidDay.set(Calendar.DATE, 1);
+
+
+        singleMonth.setFirstValidDay(firstValidDay);
+//        singleMonth.setFirstDayOfWeek(1);
+//        singleMonth.setFirstDayOfWeek(7);
+
+        singleMonth.setOnDayClickListener(new OnDayClickListener() {
+            @Override
+            public void onDayClick(long dayInMillis) {
+
+                // Set the first valid day
+                final Calendar firstValidDay = Calendar.getInstance();
+                firstValidDay.set(Calendar.YEAR, 2015);
+                firstValidDay.set(Calendar.MONTH, 8);
+                firstValidDay.set(Calendar.DATE, 1);
+                firstValidDay.set(Calendar.HOUR_OF_DAY, 0);
+                firstValidDay.set(Calendar.MINUTE, 0);
+                firstValidDay.set(Calendar.SECOND, 0);
+                firstValidDay.set(Calendar.MILLISECOND, 0);
+                TextView textViewForDate = singleMonth.getTextViewForDate(firstValidDay.getTimeInMillis());
+
+
+                Date chosen = new Date(dayInMillis);
+                int day = chosen.getDate();
+                int month = chosen.getMonth();
+                int year = chosen.getYear()+1900;
+
+                _enterAmountDaily.setText("");
+                _enterAmountDailyLayout.setVisibility(View.VISIBLE);
+                _enterAmountLayout.setVisibility(View.GONE);
+                String date = DateUtils.createDateAsString(year, month+1, day);
+                Pair<Double, List<DailyTransactionViewModel>> doubleListPair = _daysToTransactions.get(date);
+
+                DailyTransactionAdapter adapter =
+                        (DailyTransactionAdapter) _dailyTransactionViewList.getAdapter();
+
+                // add external transactions
+                Pair<Double,List<DailyTransactionViewModel>> transactionViewModels = _addedTransactions.get(date);
+                adapter.clear();
+                _dailyTotal.setText("");
+                updateViewWithOnSelectedDate(doubleListPair, adapter);
+                updateViewWithOnSelectedDate(transactionViewModels, adapter);
+
+                String dateToPresent = DateUtils.getDateForPresentation(year,month+1,day);
+                _selectedDate.setText(dateToPresent);
+                _balanceUpToToday.setText(_dateToBalance.get(date).toString());
+                _dayDetails.setVisibility(View.VISIBLE);
+
+
+
+
+            }
+        });
+
+
+        CustomDayAdapter newAdapter = new CustomDayAdapter();
+        singleMonth.setDayAdapter(newAdapter);
     }
 
 
@@ -181,7 +261,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 if (_foundADay) { // Add to plan button appear
                     String dayWithMaxBalance = getDayWithMaxBalance();
-                    createExternalTransaction(TransactionType.OUT,_enterAmount,dayWithMaxBalance);
+                    createExternalTransaction(TransactionType.OUT, _enterAmount, dayWithMaxBalance);
                     // need to change back to find a day
                     _findADay.setImageResource(R.drawable.findaday);
                     _foundADay = false;
@@ -208,7 +288,7 @@ public class MainActivity extends Activity {
     }
 
     private void createExternalTransaction(TransactionType type,EditText amountToReadFrom, String date) {
-        DailyTransactionViewModel newViewModel = createDailyViewModel(amountToReadFrom,type);
+        DailyTransactionViewModel newViewModel = createDailyViewModel(amountToReadFrom, type);
         addToExternalTransaction(date, newViewModel);
         updateTotalsWithExternalExpenses(newViewModel,type);
         updateBalanceWithExternalTransaction(date, newViewModel, type);
@@ -278,7 +358,7 @@ public class MainActivity extends Activity {
         }
 
         total = NumbersUtil.round(total, 2);
-        _addedTransactions.put(date,new Pair<>(total,list));
+        _addedTransactions.put(date, new Pair<>(total, list));
     }
 
     private void initializeListeners() {
@@ -327,7 +407,7 @@ public class MainActivity extends Activity {
 
                                 _progressBarLayout.setVisibility(View.GONE);
                                 _mainLayout.setVisibility(View.VISIBLE);
-
+                                fillCalendarWithData();
                                 //TransactionAdapter adapter = (TransactionAdapter)_transactionsViewList.getAdapter();
                                 //adapter.addAll(res);
                             } catch (Exception e) {
@@ -341,6 +421,62 @@ public class MainActivity extends Activity {
             }).start();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    private void fillCalendarWithData() {
+        Set<Map.Entry<String, Pair<Double, List<DailyTransactionViewModel>>>> entries = _daysToTransactions.entrySet();
+        Iterator<Map.Entry<String, Pair<Double, List<DailyTransactionViewModel>>>> iterator = entries.iterator();
+        while(iterator.hasNext()) {
+
+            Map.Entry<String, Pair<Double, List<DailyTransactionViewModel>>> next = iterator.next();
+            String date = next.getKey();
+            double amount = next.getValue().first;
+
+            final Calendar firstValidDay = Calendar.getInstance();
+            firstValidDay.set(Calendar.YEAR,2015);
+            firstValidDay.set(Calendar.MONTH,8);
+
+            int day = DateUtils.getDay(date);
+            firstValidDay.set(Calendar.DATE, day);
+            firstValidDay.set(Calendar.HOUR_OF_DAY, 0);
+            firstValidDay.set(Calendar.MINUTE, 0);
+            firstValidDay.set(Calendar.SECOND, 0);
+            firstValidDay.set(Calendar.MILLISECOND, 0);
+            TextView textViewForDate = singleMonth.getTextViewForDate(firstValidDay.getTimeInMillis());
+
+            if(textViewForDate!=null) {
+                if (amount < 0) {
+                    textViewForDate.setTextColor(getColor(R.color.red));
+                } else {
+                    textViewForDate.setTextColor(getColor(R.color.green));
+                }
+                amount = (amount < 0) ? amount*(-1.0) : amount;
+                textViewForDate.setText(String.valueOf(amount));
+                textViewForDate.setTextSize(10);
+
+            }
+        }
+
+    }
+
+
+    private void test() {
+        // Set the first valid day
+        final Calendar firstValidDay = Calendar.getInstance();
+        firstValidDay.set(Calendar.YEAR,2015);
+        firstValidDay.set(Calendar.MONTH,8);
+        firstValidDay.set(Calendar.DATE, 1);
+        firstValidDay.set(Calendar.HOUR_OF_DAY, 0);
+        firstValidDay.set(Calendar.MINUTE, 0);
+        firstValidDay.set(Calendar.SECOND, 0);
+        firstValidDay.set(Calendar.MILLISECOND, 0);
+        TextView textViewForDate = singleMonth.getTextViewForDate(firstValidDay.getTimeInMillis());
+
+        if(textViewForDate!=null) {
+            textViewForDate.setText("700");
+            textViewForDate.setTextColor(getColor(R.color.red));
+            //
         }
     }
 
@@ -407,7 +543,7 @@ public class MainActivity extends Activity {
      */
     public void initializeCalendar() {
 
-        calendar = (CalendarView) findViewById(R.id.calendar);
+        //calendar = (CalendarView) findViewById(R.id.calendar);
 
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.MONTH,8);
@@ -457,6 +593,7 @@ public class MainActivity extends Activity {
                 // add external transactions
                 Pair<Double,List<DailyTransactionViewModel>> transactionViewModels = _addedTransactions.get(date);
                 adapter.clear();
+
                 updateViewWithOnSelectedDate(doubleListPair, adapter);
                 updateViewWithOnSelectedDate(transactionViewModels, adapter);
 

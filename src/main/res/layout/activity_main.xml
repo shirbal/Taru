@@ -171,14 +171,23 @@
             android:background="#eceff1"
             style="@style/shiran">
 
-            <CalendarView
-                android:id="@+id/calendar"
-                android:layout_height="fill_parent"
+
+            <com.taru.taru.vdesmet.lib.calendar.CalendarView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/single_calendar"
                 android:layout_width="fill_parent"
 
-                android:background="@color/gray_light"
-                android:longClickable="true"
-                style="@style/shiran" />
+                android:layout_height="fill_parent"
+                android:background="@color/white" />
+
+            <!--<CalendarView-->
+                <!--android:id="@+id/calendar"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_width="fill_parent"-->
+
+                <!--android:background="@color/gray_light"-->
+                <!--android:longClickable="true"-->
+                <!--style="@style/shiran" />-->
 
             <!--<ListView-->
             <!--android:id="@+id/listView1"-->
@@ -297,7 +306,7 @@
             android:visibility="visible"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/enterAmount_big"
-            android:background="@color/gray_light"
+            android:background="@color/white"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -369,7 +378,7 @@
             android:visibility="gone"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/enterAmount_big"
-            android:background="@color/gray_light"
+            android:background="@color/white"
             android:orientation="horizontal">
 
             <LinearLayout
