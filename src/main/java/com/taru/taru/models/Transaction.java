@@ -26,6 +26,13 @@ public class Transaction {
         readPropertiesFromJSon(jsonObject);
     }
 
+    public Transaction(String category, String date, Double amount, TransactionType type) {
+        _category = category;
+        _date = date;
+        _amount = amount;
+        _type = type;
+    }
+
     public TransactionType getType() {
         return _type;
     }

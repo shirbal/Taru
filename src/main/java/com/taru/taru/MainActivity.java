@@ -506,7 +506,6 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-
     private String getDayWithMaxBalance() {
         String result = null;
         double max = 0;
@@ -520,4 +519,27 @@ public class MainActivity extends Activity {
         }
         return result;
     }
+
+
+    private List<Transaction> getMockedTransactions() {
+         List<Transaction> result = new ArrayList<>();
+         result.add(new Transaction("Groceries","9/1/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/3/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/4/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/7/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/8/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/10/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/14/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/15/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/16/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/21/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/23/2015",100.0,TransactionType.OUT));
+         result.add(new Transaction("Groceries","9/25/2015",100.0,TransactionType.OUT));
+
+
+
+
+        return result;
+    }
+
 }
