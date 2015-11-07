@@ -144,7 +144,7 @@ public class CalendarView extends AbstractCalendarView implements View.OnClickLi
             final ViewGroup layout = DayStyleFactory.getDayLayoutForStyle(inflater, this, dayStyle);
             final TextView dayTextView = (TextView) layout.findViewById(R.id.lib_calendar_day_text);
             final TextView dayTextViewNum = (TextView) layout.findViewById(R.id.lib_calendar_number);
-            final ViewGroup categories = (ViewGroup) layout.findViewById(R.id.lib_calendar_day_categories);
+            //final ViewGroup categories = (ViewGroup) layout.findViewById(R.id.lib_calendar_day_categories);
 
             // if set, use the custom Typeface
             if(typeface != null) {
@@ -252,6 +252,61 @@ public class CalendarView extends AbstractCalendarView implements View.OnClickLi
         return null;
     }
 
+    public TextView getDateNumber(final long dayInMillis) {
+        // Loop through all children
+        final int childCount = getChildCount();
+        for(int i = 0; i < childCount; i++) {
+            final View weekLayout = getChildAt(i);
+            if(weekLayout != null) {
+                // Let the weekLayout find a view with a correct tag
+                final View dayLayout = weekLayout.findViewWithTag(dayInMillis);
+                if(dayLayout != null) {
+                    // Find the TextView, and return it
+                    return (TextView) dayLayout.findViewById(R.id.lib_calendar_day_text);
+                }
+            }
+        }
+        // No suitable TextView found, return null
+        return null;
+    }
+
+    public View getLayoutForDate(final long dayInMillis) {
+        // Loop through all children
+        final int childCount = getChildCount();
+        for(int i = 0; i < childCount; i++) {
+            final View weekLayout = getChildAt(i);
+            if(weekLayout != null) {
+                // Let the weekLayout find a view with a correct tag
+                View viewWithTag = weekLayout.findViewWithTag(dayInMillis);
+                if (viewWithTag != null) {
+                    return viewWithTag;
+                }
+            }
+        }
+        // No suitable TextView found, return null
+        return null;
+    }
+
+    public View getLineForDate(final long dayInMillis) {
+        // Loop through all children
+        final int childCount = getChildCount();
+        for(int i = 0; i < childCount; i++) {
+            final View weekLayout = getChildAt(i);
+            if(weekLayout != null) {
+                // Let the weekLayout find a view with a correct tag
+                final View dayLayout = weekLayout.findViewWithTag(dayInMillis);
+                if(dayLayout != null) {
+                    // Find the TextView, and return it
+                    return (View) dayLayout.findViewById(R.id.lib_calendar_underline);
+                }
+            }
+        }
+        // No suitable TextView found, return null
+        return null;
+    }
+
+
+
     /**
      * Create the headers for each (visible) day of the week
      * Starts at mFirstDayOfWeek, ends at mLastDayOfWeek
@@ -290,6 +345,9 @@ public class CalendarView extends AbstractCalendarView implements View.OnClickLi
 
             // set the text
             header.setText(nameOfDay);
+            header.setTypeface(header.getTypeface(), Typeface.BOLD);
+            header.setTextSize(12);
+            header.setTextColor(getResources().getColor(R.color.black));
 
 
             // add TextView to ViewGroup

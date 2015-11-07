@@ -55,32 +55,25 @@ public class DailyTransactionAdapter extends ArrayAdapter<DailyTransactionViewMo
 
         DailyTransactionViewModel transactionViewModel = data.get(position);
         if (transactionViewModel != null) {
-
-            if(transactionViewModel.getCategory().equals("Other")) {
-                holder.category.setTextColor(getContext().getResources().getColor( R.color.orange));
-                if(transactionViewModel.getType() == TransactionType.OUT) {
-
-                    holder.amount.setTextColor(getContext().getResources().getColor( R.color.red));
-                } else {
-
-                    holder.amount.setTextColor(getContext().getResources().getColor( R.color.green));
-                }
+            if(transactionViewModel.getType() == TransactionType.OUT) {
+                holder.category.setTextColor(getContext().getResources().getColor( R.color.red));
+                holder.amount.setTextColor(getContext().getResources().getColor( R.color.red));
             } else {
-                if(transactionViewModel.getType() == TransactionType.OUT) {
-                    holder.category.setTextColor(getContext().getResources().getColor( R.color.red));
-                    holder.amount.setTextColor(getContext().getResources().getColor( R.color.red));
-                } else {
-                    holder.category.setTextColor(getContext().getResources().getColor( R.color.green));
-                    holder.amount.setTextColor(getContext().getResources().getColor( R.color.green));
-                }
+                holder.category.setTextColor(getContext().getResources().getColor( R.color.green));
+                holder.amount.setTextColor(getContext().getResources().getColor( R.color.green));
             }
 
-
             holder.category.setText(transactionViewModel.getCategory());
-            holder.amount.setText(Double.toString(transactionViewModel.getAmount()));
+            setPrice(holder.amount,transactionViewModel.getAmount());
+
         }
 
         return row;
+    }
+
+    private void setPrice(TextView text, Double amount) {
+        int i = amount.intValue();
+        text.setText("$"+i);
     }
 
     static class TransactionHolder

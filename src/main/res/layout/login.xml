@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="230dp"
+        android:id="@+id/userNameText"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:autoText="false"
+        android:backgroundTint="@color/transparent"
+        android:maxLength="10"
+        android:hint="username" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="277dp"
+        android:id="@+id/password"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:autoText="true"
+        android:backgroundTint="@color/transparent"
+        android:maxLength="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+
+    <TextView
+        android:id="@+id/sign_in_button"
+        android:text="Sign in"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:layout_width="208dp"
+        android:layout_height="30dp"
+
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="384dp"
+        android:background="@color/white"
+        />
+    <!--android:src="@drawable/liran"-->
+    <ImageView
+
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:id="@+id/login_back"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentStart="true"-->
+
+
+        <!--<EditText-->
+
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginStart="76dp"-->
+            <!--android:layout_marginTop="240dp"-->
+            <!--android:backgroundTint="@color/transparent"-->
+            <!--android:id="@+id/upasswordText"-->
+            <!--android:textSize="10dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:foreground="@color/green" />-->
+
+
+
+</RelativeLayout>

@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-
+    android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@color/white">
 
@@ -14,21 +14,37 @@
         android:visibility="gone"
         android:touchscreenBlocksFocus="true">
 
-       <ProgressBar
-           android:layout_width="fill_parent"
-           android:layout_height="fill_parent"
-           android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:progressTint="@color/blue"
+                android:progressBackgroundTint="@color/blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2">
+
 
         <TextView
             android:text="Loading your History..."
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="2"
+            android:layout_weight="6"
             android:gravity="center"
             android:textSize="20dp"
             android:textColor="@color/blue"
             android:visibility="visible" />
-
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -43,29 +59,45 @@
         <LinearLayout
             android:id="@+id/month_header_layout"
             android:layout_width="fill_parent"
-            android:layout_height="35dp"
-            android:background="#0a98f4">
+            android:layout_height="45dp"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            android:baselineAligned="true">
 
             <TextView
-                android:id="@+id/month_header"
+                android:id="@+id/month_header_month"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:text="September 2015"
-                android:gravity="center"
-                android:textSize="20dp"
-                android:autoText="true"
+                android:text="September"
+                android:textSize="15dp"
+                android:autoText="false"
+                android:layout_weight="1"
                 android:background="#0a98f4"
-
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:typeface="normal"
+                android:gravity="center_vertical|right" />
+            <TextView
+                android:id="@+id/month_header_year"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="2015"
+                android:textSize="15dp"
+                android:autoText="true"
+                android:layout_weight="1"
+                android:background="#0a98f4"
+                android:textColor="@color/white"
+                android:typeface="normal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/totals_layout"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="55dp"
             android:orientation="horizontal"
-            android:background="#dddddd">
+            android:background="@color/gray_light">
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -84,7 +116,8 @@
                     android:textSize="11dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:textColor="#282828" />
+                    android:textColor="#282828"
+                    android:id="@+id/total_balance_header" />
 
                 <TextView
                     android:id="@+id/total_balance"
@@ -92,9 +125,9 @@
                     android:layout_height="fill_parent"
 
                     android:layout_weight="1"
-                    android:textSize="12dp"
+                    android:textSize="13dp"
                     android:layout_marginLeft="25dp"
-                    android:textColor="#282828"
+                    android:textColor="#000000"
                     android:textIsSelectable="true"
                     android:textStyle="bold" />
 
@@ -119,17 +152,20 @@
                         android:layout_weight="1"
                         android:textSize="12dp"
                         android:textColor="#e95b47"
-                        android:layout_marginTop="10dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/total_expenses_header" />
 
                     <TextView
                         android:id="@+id/total_expenses"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:textSize="12dp"
+                        android:textSize="15dp"
                         android:textColor="#e95b47"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="15dp" />
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -146,16 +182,19 @@
                         android:textColor="#2dbe9b"
                         android:textSize="12dp"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginRight="8dp" />
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/total_income_header" />
 
                     <TextView
                         android:id="@+id/total_income"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:textColor="#2dbe9b"
-                        android:textSize="12dp"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="15dp" />
+                        android:textSize="15dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
 
@@ -169,7 +208,8 @@
             android:layout_weight="1.02"
             android:visibility="visible"
             android:background="#eceff1"
-            style="@style/shiran">
+            style="@style/shiran"
+            android:layout_marginTop="10dp">
 
 
             <com.taru.taru.vdesmet.lib.calendar.CalendarView
@@ -201,7 +241,7 @@
             android:orientation="horizontal"
             android:background="#060606"
             android:layout_width="fill_parent"
-            android:layout_height="120dp"
+            android:layout_height="112dp"
             android:visibility="gone">
 
 
@@ -231,7 +271,8 @@
                     android:layout_weight="1.1"
                     android:textColor="#0a98f4"
                     android:layout_marginTop="10dp"
-                    android:textSize="13dp" />
+                    android:textSize="13dp"
+                    android:id="@+id/balance_today_header" />
 
                 <!--<TextView-->
 
@@ -317,27 +358,30 @@
 
                 <TextView
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:text="Amount to Spend:"
                     android:textSize="14dp"
                     android:textIsSelectable="false"
                     android:textColor="#282828"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp" />
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/amount_to_spend_header" />
 
                 <EditText
                     android:id="@+id/enter_amount"
-                    android:layout_width="100dp"
-                    android:layout_height="55dp"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
                     android:layout_weight="1"
                     android:inputType="numberDecimal"
                     android:textColor="@color/red"
-                    android:textSize="13dp"
-                    android:layout_marginLeft="36dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="27dp"
                     android:layout_marginRight="5dp"
                     android:maxLength="4"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:singleLine="false"
+                    android:backgroundTint="@color/blue" />
 
             </LinearLayout>
 
@@ -366,7 +410,8 @@
                     android:adjustViewBounds="false"
                     android:focusableInTouchMode="false"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginTop="25dp" />
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp" />
             </LinearLayout>
 
 
@@ -395,7 +440,8 @@
                     android:textSize="14dp"
                     android:textIsSelectable="false"
                     android:textColor="#282828"
-                    android:layout_marginLeft="40dp" />
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="7dp" />
 
                 <EditText
                     android:id="@+id/enter_amount_daily"
@@ -404,11 +450,11 @@
                     android:layout_weight="1"
                     android:inputType="numberDecimal"
                     android:textColor="@color/red"
-                    android:textSize="10dp"
+                    android:textSize="15dp"
                     android:layout_marginLeft="36dp"
                     android:layout_marginRight="5dp"
                     android:maxLength="4"
-                    android:layout_marginBottom="20dp" />
+                    android:backgroundTint="@color/blue" />
 
             </LinearLayout>
 

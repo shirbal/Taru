@@ -11,27 +11,27 @@
         android:id="@+id/lib_calendar_day_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
         android:textColor="@color/lib_calendar_day_textcolor"
         android:textSize="@dimen/lib_calendar_day_textsize"
         android:background="@drawable/list_selector_holo_light"
         android:gravity="top|center"/>
 
+    <View
+        android:id="@+id/lib_calendar_underline"
+        android:layout_height="2dp"
+        android:layout_width="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
     <TextView
         android:id="@+id/lib_calendar_number"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
         android:textColor="@color/lib_calendar_day_textcolor"
         android:textSize="@dimen/lib_calendar_day_textsize"
         android:background="@drawable/list_selector_holo_light"
-        android:gravity="bottom|center"/>
+        android:gravity="center"/>
 
-    <LinearLayout
-        android:id="@+id/lib_calendar_day_categories"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="@dimen/lib_category_view_padding_startend"
-        android:layout_marginRight="@dimen/lib_category_view_padding_startend"
-        android:layout_marginBottom="@dimen/lib_category_padding_bottom" />
 </RelativeLayout>

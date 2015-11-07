@@ -24,56 +24,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="587706f0-e914-4a62-b822-b24719f59241" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/lib_calendar_background.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/lib_calendar_background.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/lib_calendar_background.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/lib_calendar_background.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/list_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/list_longpressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/list_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/list_selector_disabled_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/roboto_light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/AbstractCalendarView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/CalendarView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/views/CustomDayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/DayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/factory/DayStyleFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/views/FlatDayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/MultiCalendarAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/MultiCalendarView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/OnCalendarLoadedListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/OnDayClickListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/viewpagerindicator/TitlePageIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/viewpagerindicator/TitleProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/lib_calendar_category.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/lib_calendar_day.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/lib_calendar_headers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/lib_calendar_single_header.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/lib_calendar_single_month.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/lib_calendar_week.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/drawable/list_selector_background_transition_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/drawable/list_selector_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/shiran.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/drawable/circ.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/drawable/circle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/drawable/liran.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/loginscreen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/drawable/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/signin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/spla-web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/spla.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/spla.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/spla.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/spla.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/spla.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/assets/splash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/CalendarHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/LoginActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/SplashActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/login.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/splash_screen.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/CalendarView.java" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/CalendarView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/taru/taru/views/DailyTransactionAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/views/DailyTransactionAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/DateUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/DateUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/NumbersUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/NumbersUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Taru.iml" afterPath="$PROJECT_DIR$/Taru.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/TransactionUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/TransactionUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/lib_calendar_day.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/lib_calendar_day.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Taru.iws" />
@@ -103,170 +83,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CalendarView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/CalendarView.java">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-              <folding>
-                <element signature="method#CalendarView#0;class#CalendarView#0" expanded="false" />
-                <element signature="method#CalendarView#1;class#CalendarView#0" expanded="false" />
-                <element signature="method#CalendarView#2;class#CalendarView#0" expanded="false" />
-                <element signature="method#init#0;class#CalendarView#0" expanded="false" />
-                <element signature="docComment;method#onClick#0;class#CalendarView#0" expanded="false" />
-                <element signature="method#onClick#0;class#CalendarView#0" expanded="false" />
-                <element signature="docComment;method#initView#0;class#CalendarView#0" expanded="false" />
-                <element signature="e#6409#6421#0" expanded="false" />
-                <element signature="docComment;method#createHeaders#0;class#CalendarView#0" expanded="false" />
-                <element signature="e#11803#11842#0" expanded="false" />
-                <element signature="method#updateDayWidth#0;class#CalendarView#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlatDayAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/views/FlatDayAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state vertical-scroll-proportion="3.2068965">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#1399#1668#0" expanded="true" />
+                <element signature="e#1667#1668#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-              <folding>
-                <element signature="e#279#1084#0" expanded="false" />
-                <element signature="e#554#698#0" expanded="false" />
-                <element signature="e#708#1062#0" expanded="false" />
-                <element signature="e#3036#3500#0" expanded="false" />
-                <element signature="e#4875#6017#0" expanded="false" />
-                <element signature="e#5121#5570#0" expanded="false" />
-                <element signature="e#5592#5985#0" expanded="false" />
-                <element signature="e#7945#8263#0" expanded="false" />
-                <element signature="e#10348#10679#0" expanded="false" />
-                <element signature="e#10701#11098#0" expanded="false" />
-                <element signature="e#11384#11408#0" expanded="true" />
-                <element signature="e#11514#12811#0" expanded="false" />
-                <element signature="e#11738#12209#0" expanded="false" />
-                <element signature="e#12227#12782#0" expanded="false" />
-                <element signature="e#12825#14076#0" expanded="false" />
-                <element signature="e#14302#14326#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="login.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/login.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.2413793">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestApiCaller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/citi/utils/RestApiCaller.java">
+      <file leaf-file-name="SplashActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/SplashActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="method#readJSONArray#0;class#RestApiCaller#0" expanded="false" />
-                <element signature="method#getJSONObjectFromString#0;class#RestApiCaller#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="183" column="13" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4292#6411#0" expanded="true" />
-                <element signature="method#initializeEditText#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#initializeLayouts#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#initializeTextViews#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#initializeButtons#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#9024#9391#0" expanded="true" />
-                <element signature="e#9390#9391#0" expanded="true" />
-                <element signature="method#initializeClickListenerForFindADay#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#9496#10709#0" expanded="true" />
-                <element signature="e#10388#10421#0" expanded="false" />
-                <element signature="e#10708#10709#0" expanded="true" />
-                <element signature="method#createExternalTransaction#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#updateBalanceWithExternalTransaction#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#updateTotalsWithExternalExpenses#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getDataFromRest#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#fillTransactionModelsList#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#fillTransactionModelsList#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#updateTotals#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#updateTotals#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#initializeCalendar#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#21079#21131#0" expanded="false" />
-                <element signature="e#21243#21291#0" expanded="false" />
-                <element signature="e#21753#21850#0" expanded="false" />
-                <element signature="e#22029#23395#0" expanded="true" />
-                <element signature="e#23394#23395#0" expanded="true" />
-                <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#24428#24486#0" expanded="false" />
-                <element signature="method#getDayWithMaxBalance#0;class#MainActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/util/Date.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="256" column="15" selection-start-line="256" selection-start-column="15" selection-end-line="256" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/utils/TransactionUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.2083335">
-              <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumbersUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/utils/NumbersUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Double.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/lang/Double.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomDayAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/views/CustomDayAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -282,9 +130,9 @@
         <option value="valueResourceFile" />
         <option value="Enum" />
         <option value="resourceFile" />
-        <option value="Class" />
         <option value="Singleton" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -990,24 +838,19 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/main_calendar.xml" />
         <option value="$PROJECT_DIR$/src/main/res/menu/menu_main.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/app_header.xml" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/amount_to_spend.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/cell_template.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/temp.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/citi/utils/UrlCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/models/enums/TransactionType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/views/TransactionViewModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/citi/utils/RestApiCaller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/views/DailyTransactionViewModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/views/TransactionAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/day_details.xml" />
         <option value="$PROJECT_DIR$/src/main/res/xml/styles.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/views/TextsClickListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/views/DailyTransactionAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/models/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/list_selector_holo_light.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
@@ -1021,11 +864,23 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/shiran.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/factory/DayStyleFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/views/CustomDayAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/CalendarView.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/TransactionUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/NumbersUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/TransactionUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/utils/CalendarHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/CalendarView.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/lib_calendar_day.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/views/DailyTransactionAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/citi/utils/RestApiCaller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/splash_screen.xml" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/login.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/taru/taru/LoginActivity.java" />
       </list>
     </option>
   </component>
@@ -1040,8 +895,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="519" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="919" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -1067,6 +923,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1077,7 +935,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1135,162 +993,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap-xxhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap-xhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1336,45 +1038,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1394,13 +1058,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/From Liran/holo-calendar-sample" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/From Liran/holo-calendar-sample 2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
@@ -1408,22 +1070,20 @@
     <property name="FullScreen" value="false" />
     <property name="android.project.structure.last.selected" value="Taru" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="501" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="475" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="extractMethod.generateAnnotations" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/taru/taru/views" />
       <recent name="$PROJECT_DIR$/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/taru/taru/views" />
       <recent name="$PROJECT_DIR$/src/main/res/fonts" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/assets" />
@@ -1431,6 +1091,10 @@
       <recent name="$PROJECT_DIR$/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi" />
       <recent name="$PROJECT_DIR$/src/main/res/mipmap-xhdpi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.taru.taru" />
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.Taru">
@@ -1661,35 +1325,50 @@
       <option name="project" value="LOCAL" />
       <updated>1446787896065</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Shiran: Added calendar">
+      <created>1446799999678</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1446799999678</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="519" y="23" width="919" height="873" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.014144272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.01321004" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.048877146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32232496" sideWeight="0.47599164" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31175694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4583884" sideWeight="0.47599164" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18097754" sideWeight="0.47567955" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22985469" sideWeight="0.47567955" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41743726" sideWeight="0.52400833" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.77278733" sideWeight="0.48569384" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.84808457" sideWeight="0.48569384" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21796565" sideWeight="0.4828326" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21648352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34478202" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37628278" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3712021" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1702,15 +1381,15 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24248926" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1722,8 +1401,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31175694" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1742,7 +1421,8 @@
     <MESSAGE value="Updates to work with new server" />
     <MESSAGE value="Shiran:&#10;1. update the rest call to read json object correctly&#10;2. create main ui in general views&#10;" />
     <MESSAGE value="Shiran: more features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shiran: more features" />
+    <MESSAGE value="Shiran: Added calendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shiran: Added calendar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1754,419 +1434,42 @@
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java</url>
-          <line>245</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/taru/taru/citi/utils/RestApiCaller.java</url>
           <line>48</line>
           <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taru/taru/SplashActivity.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taru/taru/LoginActivity.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="97" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="126" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/util/TreeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25662252">
-          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6424581">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/menu/menu_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13297872">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/views/TransactionViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="177" column="19" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/utils/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
-          <folding>
-            <element signature="e#2699#2700#0" expanded="false" />
-            <element signature="e#2743#2744#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/TextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3129" column="16" selection-start-line="3129" selection-start-column="16" selection-end-line="3129" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#380970#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#26586#26587#0" expanded="false" />
-            <element signature="e#26621#26622#0" expanded="false" />
-            <element signature="e#63358#63359#0" expanded="false" />
-            <element signature="e#63386#63387#0" expanded="false" />
-            <element signature="e#63531#63532#0" expanded="false" />
-            <element signature="e#63558#63559#0" expanded="false" />
-            <element signature="e#64096#64097#0" expanded="false" />
-            <element signature="e#64124#64125#0" expanded="false" />
-            <element signature="e#64246#64247#0" expanded="false" />
-            <element signature="e#64283#64284#0" expanded="false" />
-            <element signature="e#65170#65171#0" expanded="false" />
-            <element signature="e#65200#65201#0" expanded="false" />
-            <element signature="e#65358#65359#0" expanded="false" />
-            <element signature="e#65392#65393#0" expanded="false" />
-            <element signature="e#70320#70321#0" expanded="false" />
-            <element signature="e#70352#70353#0" expanded="false" />
-            <element signature="e#72139#72140#0" expanded="false" />
-            <element signature="e#72177#72178#0" expanded="false" />
-            <element signature="e#78447#78448#0" expanded="false" />
-            <element signature="e#78494#78495#0" expanded="false" />
-            <element signature="e#78647#78648#0" expanded="false" />
-            <element signature="e#78695#78696#0" expanded="false" />
-            <element signature="e#78848#78849#0" expanded="false" />
-            <element signature="e#78896#78897#0" expanded="false" />
-            <element signature="e#79043#79044#0" expanded="false" />
-            <element signature="e#79089#79090#0" expanded="false" />
-            <element signature="e#79345#79346#0" expanded="false" />
-            <element signature="e#79417#79418#0" expanded="false" />
-            <element signature="e#104215#104216#0" expanded="false" />
-            <element signature="e#104251#104252#0" expanded="false" />
-            <element signature="e#104886#104887#0" expanded="false" />
-            <element signature="e#104936#104937#0" expanded="false" />
-            <element signature="e#108087#108088#0" expanded="false" />
-            <element signature="e#108136#108137#0" expanded="false" />
-            <element signature="e#109075#109076#0" expanded="false" />
-            <element signature="e#109122#109123#0" expanded="false" />
-            <element signature="e#109329#109330#0" expanded="false" />
-            <element signature="e#109397#109398#0" expanded="false" />
-            <element signature="e#110354#110355#0" expanded="false" />
-            <element signature="e#110415#110416#0" expanded="false" />
-            <element signature="e#111520#111521#0" expanded="false" />
-            <element signature="e#111569#111570#0" expanded="false" />
-            <element signature="e#113255#113256#0" expanded="false" />
-            <element signature="e#113302#113303#0" expanded="false" />
-            <element signature="e#113747#113748#0" expanded="false" />
-            <element signature="e#113803#113804#0" expanded="false" />
-            <element signature="e#114043#114044#0" expanded="false" />
-            <element signature="e#114095#114096#0" expanded="false" />
-            <element signature="e#115025#115026#0" expanded="false" />
-            <element signature="e#115083#115084#0" expanded="false" />
-            <element signature="e#115974#115975#0" expanded="false" />
-            <element signature="e#116011#116012#0" expanded="false" />
-            <element signature="e#116859#116860#0" expanded="false" />
-            <element signature="e#116903#116904#0" expanded="false" />
-            <element signature="e#118986#118987#0" expanded="false" />
-            <element signature="e#119019#119020#0" expanded="false" />
-            <element signature="e#119214#119215#0" expanded="false" />
-            <element signature="e#119250#119251#0" expanded="false" />
-            <element signature="e#119864#119865#0" expanded="false" />
-            <element signature="e#119902#119903#0" expanded="false" />
-            <element signature="e#121940#121941#0" expanded="false" />
-            <element signature="e#121976#121977#0" expanded="false" />
-            <element signature="e#122206#122207#0" expanded="false" />
-            <element signature="e#122238#122239#0" expanded="false" />
-            <element signature="e#122466#122467#0" expanded="false" />
-            <element signature="e#122498#122499#0" expanded="false" />
-            <element signature="e#122734#122735#0" expanded="false" />
-            <element signature="e#122769#122770#0" expanded="false" />
-            <element signature="e#122956#122957#0" expanded="false" />
-            <element signature="e#122989#122990#0" expanded="false" />
-            <element signature="e#123299#123300#0" expanded="false" />
-            <element signature="e#123335#123336#0" expanded="false" />
-            <element signature="e#123751#123752#0" expanded="false" />
-            <element signature="e#123792#123793#0" expanded="false" />
-            <element signature="e#124161#124162#0" expanded="false" />
-            <element signature="e#124199#124200#0" expanded="false" />
-            <element signature="e#126083#126084#0" expanded="false" />
-            <element signature="e#126120#126121#0" expanded="false" />
-            <element signature="e#127584#127585#0" expanded="false" />
-            <element signature="e#127621#127622#0" expanded="false" />
-            <element signature="e#129184#129185#0" expanded="false" />
-            <element signature="e#129215#129216#0" expanded="false" />
-            <element signature="e#129362#129363#0" expanded="false" />
-            <element signature="e#129406#129407#0" expanded="false" />
-            <element signature="e#130744#130745#0" expanded="false" />
-            <element signature="e#130789#130790#0" expanded="false" />
-            <element signature="e#131617#131618#0" expanded="false" />
-            <element signature="e#131673#131674#0" expanded="false" />
-            <element signature="e#132437#132438#0" expanded="false" />
-            <element signature="e#132494#132495#0" expanded="false" />
-            <element signature="e#133231#133232#0" expanded="false" />
-            <element signature="e#133287#133288#0" expanded="false" />
-            <element signature="e#134135#134136#0" expanded="false" />
-            <element signature="e#134192#134193#0" expanded="false" />
-            <element signature="e#135932#135933#0" expanded="false" />
-            <element signature="e#135992#135993#0" expanded="false" />
-            <element signature="e#136676#136677#0" expanded="false" />
-            <element signature="e#136739#136740#0" expanded="false" />
-            <element signature="e#137412#137413#0" expanded="false" />
-            <element signature="e#137472#137473#0" expanded="false" />
-            <element signature="e#138155#138156#0" expanded="false" />
-            <element signature="e#138218#138219#0" expanded="false" />
-            <element signature="e#140237#140238#0" expanded="false" />
-            <element signature="e#140272#140273#0" expanded="false" />
-            <element signature="e#140628#140629#0" expanded="false" />
-            <element signature="e#140662#140663#0" expanded="false" />
-            <element signature="e#140898#140899#0" expanded="false" />
-            <element signature="e#140944#140945#0" expanded="false" />
-            <element signature="e#148002#148003#0" expanded="false" />
-            <element signature="e#148044#148045#0" expanded="false" />
-            <element signature="e#148310#148311#0" expanded="false" />
-            <element signature="e#148345#148346#0" expanded="false" />
-            <element signature="e#149532#149533#0" expanded="false" />
-            <element signature="e#149574#149575#0" expanded="false" />
-            <element signature="e#149918#149919#0" expanded="false" />
-            <element signature="e#149969#149970#0" expanded="false" />
-            <element signature="e#159810#159811#0" expanded="false" />
-            <element signature="e#159838#159839#0" expanded="false" />
-            <element signature="e#159868#159869#0" expanded="false" />
-            <element signature="e#159902#159903#0" expanded="false" />
-            <element signature="e#177694#177695#0" expanded="false" />
-            <element signature="e#177756#177757#0" expanded="false" />
-            <element signature="e#181597#181598#0" expanded="false" />
-            <element signature="e#181628#181629#0" expanded="false" />
-            <element signature="e#192381#192382#0" expanded="false" />
-            <element signature="e#192444#192445#0" expanded="false" />
-            <element signature="e#192684#192685#0" expanded="false" />
-            <element signature="e#192751#192752#0" expanded="false" />
-            <element signature="e#192811#192812#0" expanded="false" />
-            <element signature="e#192878#192879#0" expanded="false" />
-            <element signature="e#203618#203619#0" expanded="false" />
-            <element signature="e#203642#203643#0" expanded="false" />
-            <element signature="e#213193#213194#0" expanded="false" />
-            <element signature="e#213260#213261#0" expanded="false" />
-            <element signature="e#239470#239471#0" expanded="false" />
-            <element signature="e#239531#239532#0" expanded="false" />
-            <element signature="e#239565#239566#0" expanded="false" />
-            <element signature="e#239624#239625#0" expanded="false" />
-            <element signature="e#240604#240605#0" expanded="false" />
-            <element signature="e#240632#240633#0" expanded="false" />
-            <element signature="e#254218#254219#0" expanded="false" />
-            <element signature="e#254281#254282#0" expanded="false" />
-            <element signature="e#255890#255891#0" expanded="false" />
-            <element signature="e#255924#255925#0" expanded="false" />
-            <element signature="e#280789#280790#0" expanded="false" />
-            <element signature="e#280847#280848#0" expanded="false" />
-            <element signature="e#281924#281925#0" expanded="false" />
-            <element signature="e#281985#281986#0" expanded="false" />
-            <element signature="e#282146#282147#0" expanded="false" />
-            <element signature="e#282205#282206#0" expanded="false" />
-            <element signature="e#283079#283080#0" expanded="false" />
-            <element signature="e#283114#283115#0" expanded="false" />
-            <element signature="e#287254#287255#0" expanded="false" />
-            <element signature="e#287304#287305#0" expanded="false" />
-            <element signature="e#287733#287734#0" expanded="false" />
-            <element signature="e#287775#287776#0" expanded="false" />
-            <element signature="e#287981#287982#0" expanded="false" />
-            <element signature="e#288014#288015#0" expanded="false" />
-            <element signature="e#311201#311202#0" expanded="false" />
-            <element signature="e#311270#311271#0" expanded="false" />
-            <element signature="e#311807#311808#0" expanded="false" />
-            <element signature="e#311836#311837#0" expanded="false" />
-            <element signature="e#323535#323536#0" expanded="false" />
-            <element signature="e#323563#323564#0" expanded="false" />
-            <element signature="e#324521#324522#0" expanded="false" />
-            <element signature="e#324585#324586#0" expanded="false" />
-            <element signature="e#326644#326645#0" expanded="false" />
-            <element signature="e#326691#326692#0" expanded="false" />
-            <element signature="e#352080#352081#0" expanded="false" />
-            <element signature="e#352139#352140#0" expanded="false" />
-            <element signature="e#352164#352165#0" expanded="false" />
-            <element signature="e#352223#352224#0" expanded="false" />
-            <element signature="e#352817#352818#0" expanded="false" />
-            <element signature="e#352849#352850#0" expanded="false" />
-            <element signature="e#363777#363778#0" expanded="false" />
-            <element signature="e#363805#363806#0" expanded="false" />
-            <element signature="e#365330#365331#0" expanded="false" />
-            <element signature="e#365372#365373#0" expanded="false" />
-            <element signature="e#365460#365461#0" expanded="false" />
-            <element signature="e#365487#365488#0" expanded="false" />
-            <element signature="e#365579#365580#0" expanded="false" />
-            <element signature="e#365619#365620#0" expanded="false" />
-            <element signature="e#367778#367779#0" expanded="false" />
-            <element signature="e#367819#367820#0" expanded="false" />
-            <element signature="e#369104#369105#0" expanded="false" />
-            <element signature="e#369161#369162#0" expanded="false" />
-            <element signature="e#369215#369216#0" expanded="false" />
-            <element signature="e#369274#369275#0" expanded="false" />
-            <element signature="e#370331#370332#0" expanded="false" />
-            <element signature="e#370369#370370#0" expanded="false" />
-            <element signature="e#370408#370409#0" expanded="false" />
-            <element signature="e#370459#370460#0" expanded="false" />
-            <element signature="e#370513#370514#0" expanded="false" />
-            <element signature="e#370579#370580#0" expanded="false" />
-            <element signature="e#374344#374345#0" expanded="false" />
-            <element signature="e#374382#374383#0" expanded="false" />
-            <element signature="e#377663#377664#0" expanded="false" />
-            <element signature="e#377706#377707#0" expanded="false" />
-            <element signature="e#377735#377736#0" expanded="false" />
-            <element signature="e#377773#377774#0" expanded="false" />
-            <element signature="e#377809#377810#0" expanded="false" />
-            <element signature="e#377854#377855#0" expanded="false" />
-            <element signature="e#377894#377895#0" expanded="false" />
-            <element signature="e#377945#377946#0" expanded="false" />
-            <element signature="e#377982#377983#0" expanded="false" />
-            <element signature="e#378064#378065#0" expanded="false" />
-            <element signature="e#378095#378096#0" expanded="false" />
-            <element signature="e#378152#378153#0" expanded="false" />
-            <element signature="e#378183#378184#0" expanded="false" />
-            <element signature="e#378240#378241#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/views/DailyTransactionAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/views/TextsClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55950266">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/views/TransactionAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/models/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
-          <folding>
-            <element signature="e#681#682#0" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/lib_calendar_headers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/lib_calendar_single_header.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/lib_calendar_single_month.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/lib_calendar_week.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/transaction_template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80714285">
-          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/OnDayClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.041152265">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/OnCalendarLoadedListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.041152265">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7765363">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2201,7 +1504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53072625">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2221,21 +1523,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/generated/source/r/debug/com/taru/taru/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05882353">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/MultiCalendarView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.19553073">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
-            <element signature="e#4965#4966#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
+            <element signature="e#4965#4966#0" expanded="false" />
+            <element signature="e#4998#4999#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2272,14 +1566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/util/Calendar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2293,7 +1579,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="57" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2303,7 +1589,7 @@
         <state vertical-scroll-proportion="0.6296296">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2341,25 +1627,14 @@
             <element signature="docComment;method#getNameForDay#0;class#AbstractCalendarView#0" expanded="false" />
             <element signature="method#notifyDataSetChanged#0;class#AbstractCalendarView#0" expanded="false" />
             <element signature="docComment;method#getFirstDayOfWeek#0;class#AbstractCalendarView#0" expanded="false" />
-            <element signature="e#16414#16415#0" expanded="true" />
-            <element signature="e#16450#16451#0" expanded="true" />
+            <element signature="e#16414#16415#0" expanded="false" />
+            <element signature="e#16450#16451#0" expanded="false" />
             <element signature="docComment;method#getDaysInRow#0;class#AbstractCalendarView#0" expanded="false" />
             <element signature="method#getDaysInRow#0;class#AbstractCalendarView#0" expanded="false" />
             <element signature="docComment;method#getDayStyle#0;class#AbstractCalendarView#0" expanded="false" />
             <element signature="docComment;method#getTypeface#0;class#AbstractCalendarView#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/lib_calendar_day.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.172414">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/shiran.xml">
@@ -2385,9 +1660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2396,57 +1669,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding>
-            <element signature="e#279#1084#0" expanded="false" />
-            <element signature="e#554#698#0" expanded="false" />
-            <element signature="e#708#1062#0" expanded="false" />
-            <element signature="e#3036#3500#0" expanded="false" />
-            <element signature="e#4875#6017#0" expanded="false" />
-            <element signature="e#5121#5570#0" expanded="false" />
-            <element signature="e#5592#5985#0" expanded="false" />
-            <element signature="e#7945#8263#0" expanded="false" />
-            <element signature="e#10348#10679#0" expanded="false" />
-            <element signature="e#10701#11098#0" expanded="false" />
-            <element signature="e#11384#11408#0" expanded="true" />
-            <element signature="e#11514#12811#0" expanded="false" />
-            <element signature="e#11738#12209#0" expanded="false" />
-            <element signature="e#12227#12782#0" expanded="false" />
-            <element signature="e#12825#14076#0" expanded="false" />
-            <element signature="e#14302#14326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/CalendarView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-          <folding>
-            <element signature="method#CalendarView#0;class#CalendarView#0" expanded="false" />
-            <element signature="method#CalendarView#1;class#CalendarView#0" expanded="false" />
-            <element signature="method#CalendarView#2;class#CalendarView#0" expanded="false" />
-            <element signature="method#init#0;class#CalendarView#0" expanded="false" />
-            <element signature="docComment;method#onClick#0;class#CalendarView#0" expanded="false" />
-            <element signature="method#onClick#0;class#CalendarView#0" expanded="false" />
-            <element signature="docComment;method#initView#0;class#CalendarView#0" expanded="false" />
-            <element signature="e#6409#6421#0" expanded="false" />
-            <element signature="docComment;method#createHeaders#0;class#CalendarView#0" expanded="false" />
-            <element signature="e#11803#11842#0" expanded="false" />
-            <element signature="method#updateDayWidth#0;class#CalendarView#0" expanded="false" />
+            <element signature="e#303#304#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2455,44 +1679,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="256" column="15" selection-start-line="256" selection-start-column="15" selection-end-line="256" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="183" column="13" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4292#6411#0" expanded="true" />
-            <element signature="method#initializeEditText#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#initializeLayouts#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#initializeTextViews#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#initializeButtons#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#9024#9391#0" expanded="true" />
-            <element signature="e#9390#9391#0" expanded="true" />
-            <element signature="method#initializeClickListenerForFindADay#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#9496#10709#0" expanded="true" />
-            <element signature="e#10388#10421#0" expanded="false" />
-            <element signature="e#10708#10709#0" expanded="true" />
-            <element signature="method#createExternalTransaction#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateBalanceWithExternalTransaction#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateTotalsWithExternalExpenses#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getDataFromRest#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#fillTransactionModelsList#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#fillTransactionModelsList#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#updateTotals#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateTotals#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#initializeCalendar#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#21079#21131#0" expanded="false" />
-            <element signature="e#21243#21291#0" expanded="false" />
-            <element signature="e#21753#21850#0" expanded="false" />
-            <element signature="e#22029#23395#0" expanded="true" />
-            <element signature="e#23394#23395#0" expanded="true" />
-            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#24428#24486#0" expanded="false" />
-            <element signature="method#getDayWithMaxBalance#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#0#27768#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2572#2573#0" expanded="false" />
+            <element signature="e#2620#2621#0" expanded="false" />
+            <element signature="e#5328#5329#0" expanded="false" />
+            <element signature="e#5376#5377#0" expanded="false" />
+            <element signature="e#5678#5679#0" expanded="false" />
+            <element signature="e#5722#5723#0" expanded="false" />
+            <element signature="e#6040#6041#0" expanded="false" />
+            <element signature="e#6095#6096#0" expanded="false" />
+            <element signature="e#6424#6425#0" expanded="false" />
+            <element signature="e#6479#6480#0" expanded="false" />
+            <element signature="e#8404#8405#0" expanded="false" />
+            <element signature="e#8481#8482#0" expanded="false" />
+            <element signature="e#9107#9108#0" expanded="false" />
+            <element signature="e#9191#9192#0" expanded="false" />
+            <element signature="e#9453#9454#0" expanded="false" />
+            <element signature="e#9532#9533#0" expanded="false" />
+            <element signature="e#9776#9777#0" expanded="false" />
+            <element signature="e#9854#9855#0" expanded="false" />
+            <element signature="e#10118#10119#0" expanded="false" />
+            <element signature="e#10197#10198#0" expanded="false" />
+            <element signature="e#10463#10464#0" expanded="false" />
+            <element signature="e#10498#10499#0" expanded="false" />
+            <element signature="e#11289#11290#0" expanded="false" />
+            <element signature="e#11373#11374#0" expanded="false" />
+            <element signature="e#11631#11632#0" expanded="false" />
+            <element signature="e#11702#11703#0" expanded="false" />
+            <element signature="e#22358#22359#0" expanded="false" />
+            <element signature="e#22406#22407#0" expanded="false" />
+            <element signature="e#23672#23673#0" expanded="false" />
+            <element signature="e#23740#23741#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2501,17 +1720,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/citi/utils/RestApiCaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="method#readJSONArray#0;class#RestApiCaller#0" expanded="false" />
-            <element signature="method#getJSONObjectFromString#0;class#RestApiCaller#0" expanded="false" />
+            <element signature="e#0#16284#0" expanded="false" />
+            <element signature="e#3876#3877#0" expanded="false" />
+            <element signature="e#3910#3911#0" expanded="false" />
+            <element signature="e#5296#5297#0" expanded="false" />
+            <element signature="e#5347#5348#0" expanded="false" />
+            <element signature="e#5392#5393#0" expanded="false" />
+            <element signature="e#5427#5428#0" expanded="false" />
+            <element signature="e#6521#6522#0" expanded="false" />
+            <element signature="e#6549#6550#0" expanded="false" />
+            <element signature="e#7384#7385#0" expanded="false" />
+            <element signature="e#7420#7421#0" expanded="false" />
+            <element signature="e#7593#7594#0" expanded="false" />
+            <element signature="e#7627#7628#0" expanded="false" />
+            <element signature="e#7882#7883#0" expanded="false" />
+            <element signature="e#7922#7923#0" expanded="false" />
+            <element signature="e#8606#8607#0" expanded="false" />
+            <element signature="e#8641#8642#0" expanded="false" />
+            <element signature="e#9008#9009#0" expanded="false" />
+            <element signature="e#9037#9038#0" expanded="false" />
+            <element signature="e#9316#9317#0" expanded="false" />
+            <element signature="e#9351#9352#0" expanded="false" />
+            <element signature="e#9881#9882#0" expanded="false" />
+            <element signature="e#9917#9918#0" expanded="false" />
+            <element signature="e#9963#9964#0" expanded="false" />
+            <element signature="e#10008#10009#0" expanded="false" />
+            <element signature="e#10315#10316#0" expanded="false" />
+            <element signature="e#10382#10383#0" expanded="false" />
+            <element signature="e#12799#12800#0" expanded="false" />
+            <element signature="e#12835#12836#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2524,11 +1762,477 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/day_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/cell_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/utils/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#DateUtils#0" expanded="false" />
+            <element signature="method#getNextMonth#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#getTargetYear#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#getCurrentYear#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#createDateFromDay#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#createDateAsString#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#getDateForPresentation#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#toDate#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#dateToString#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#getDay#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#getYear#0;class#DateUtils#0" expanded="false" />
+            <element signature="method#getMonth#0;class#DateUtils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/views/TextsClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/circle.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values-w820dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/graphics/Typeface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="27" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/utils/CalendarHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2722323">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+          <folding>
+            <element signature="docComment;class#CalendarHelper#0" expanded="false" />
+            <element signature="method#fillCalendarWithData#0;class#CalendarHelper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/utils/TransactionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.2083335">
-          <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#TransactionUtil#0" expanded="false" />
+            <element signature="method#calcTotal#0;class#TransactionUtil#0" expanded="false" />
+            <element signature="docComment;method#updateDaysToTransactionMap#0;class#TransactionUtil#0" expanded="false" />
+            <element signature="method#updateDaysToTransactionMap#0;class#TransactionUtil#0" expanded="false" />
+            <element signature="method#updateMapWithNewModel#0;class#TransactionUtil#0" expanded="false" />
+            <element signature="method#updateBalances#0;class#TransactionUtil#0" expanded="false" />
+            <element signature="method#fillMissingDatesWithBalance#0;class#TransactionUtil#0" expanded="false" />
+            <element signature="method#updateBalancesMap#0;class#TransactionUtil#0" expanded="false" />
+            <element signature="method#transactionToDailyModel#0;class#TransactionUtil#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/vdesmet/lib/calendar/CalendarView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="289" column="30" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="30" />
+          <folding>
+            <element signature="method#CalendarView#1;class#CalendarView#0" expanded="false" />
+            <element signature="method#CalendarView#2;class#CalendarView#0" expanded="false" />
+            <element signature="method#init#0;class#CalendarView#0" expanded="false" />
+            <element signature="docComment;method#onClick#0;class#CalendarView#0" expanded="false" />
+            <element signature="method#onClick#0;class#CalendarView#0" expanded="false" />
+            <element signature="docComment;method#initView#0;class#CalendarView#0" expanded="false" />
+            <element signature="method#initView#0;class#CalendarView#0" expanded="false" />
+            <element signature="e#5976#6073#0" expanded="false" />
+            <element signature="e#6411#6423#0" expanded="false" />
+            <element signature="e#7258#7299#0" expanded="false" />
+            <element signature="e#7600#7643#0" expanded="false" />
+            <element signature="method#getTextViewForDate#0;class#CalendarView#0" expanded="false" />
+            <element signature="method#getLayoutForDate#0;class#CalendarView#0" expanded="false" />
+            <element signature="docComment;method#createHeaders#0;class#CalendarView#0" expanded="false" />
+            <element signature="method#createHeaders#0;class#CalendarView#0" expanded="false" />
+            <element signature="e#13898#13937#0" expanded="false" />
+            <element signature="method#updateDayWidth#0;class#CalendarView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/views/DailyTransactionAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94555354">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/citi/utils/RestApiCaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding>
+            <element signature="method#readJSONArray#0;class#RestApiCaller#0" expanded="false" />
+            <element signature="method#getJSONObjectFromString#0;class#RestApiCaller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="2413" column="0" selection-start-line="2413" selection-start-column="0" selection-end-line="2413" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/income.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assets/splash.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+          <folding>
+            <element signature="e#313#1650#0" expanded="false" />
+            <element signature="e#589#1083#0" expanded="false" />
+            <element signature="e#750#1058#0" expanded="false" />
+            <element signature="e#1093#1629#0" expanded="false" />
+            <element signature="e#1251#1605#0" expanded="false" />
+            <element signature="e#1657#20078#0" expanded="false" />
+            <element signature="e#1882#3305#0" expanded="false" />
+            <element signature="e#2181#2706#0" expanded="false" />
+            <element signature="e#2719#3280#0" expanded="false" />
+            <element signature="e#3315#7810#0" expanded="false" />
+            <element signature="e#3572#4931#0" expanded="false" />
+            <element signature="e#3938#4419#0" expanded="false" />
+            <element signature="e#4437#4901#0" expanded="false" />
+            <element signature="e#4945#7785#0" expanded="false" />
+            <element signature="e#5170#6427#0" expanded="false" />
+            <element signature="e#5362#5873#0" expanded="false" />
+            <element signature="e#5895#6395#0" expanded="false" />
+            <element signature="e#6445#7755#0" expanded="false" />
+            <element signature="e#6691#7259#0" expanded="false" />
+            <element signature="e#7281#7723#0" expanded="false" />
+            <element signature="e#7820#9054#0" expanded="false" />
+            <element signature="e#8146#8476#0" expanded="false" />
+            <element signature="e#9064#13028#0" expanded="false" />
+            <element signature="e#9352#11295#0" expanded="false" />
+            <element signature="e#9727#10045#0" expanded="false" />
+            <element signature="e#10063#10495#0" expanded="false" />
+            <element signature="e#10950#11266#0" expanded="false" />
+            <element signature="e#11309#13001#0" expanded="false" />
+            <element signature="e#11630#11925#0" expanded="false" />
+            <element signature="e#11943#12972#0" expanded="false" />
+            <element signature="e#12189#12520#0" expanded="false" />
+            <element signature="e#12542#12939#0" expanded="false" />
+            <element signature="e#13038#16164#0" expanded="false" />
+            <element signature="e#13355#14818#0" expanded="false" />
+            <element signature="e#13579#14112#0" expanded="false" />
+            <element signature="e#14130#14789#0" expanded="false" />
+            <element signature="e#14832#16138#0" expanded="false" />
+            <element signature="e#15549#16110#0" expanded="false" />
+            <element signature="e#16175#20057#0" expanded="false" />
+            <element signature="e#16494#17800#0" expanded="false" />
+            <element signature="e#16718#17186#0" expanded="false" />
+            <element signature="e#17204#17771#0" expanded="false" />
+            <element signature="e#17814#20031#0" expanded="false" />
+            <element signature="e#18041#19068#0" expanded="false" />
+            <element signature="e#18338#18682#0" expanded="false" />
+            <element signature="e#18704#19035#0" expanded="false" />
+            <element signature="e#19087#19999#0" expanded="false" />
+            <element signature="e#19384#19669#0" expanded="false" />
+            <element signature="e#19691#19966#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/lib_calendar_day.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.206897">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#152#182#0" expanded="true" />
+            <element signature="e#213#243#0" expanded="true" />
+            <element signature="e#278#317#0" expanded="true" />
+            <element signature="e#353#392#0" expanded="true" />
+            <element signature="e#672#706#0" expanded="true" />
+            <element signature="e#1313#1347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/content/ContextWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="201" column="16" selection-start-line="201" selection-start-column="16" selection-end-line="201" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#23046#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1824#1825#0" expanded="false" />
+            <element signature="e#1852#1853#0" expanded="false" />
+            <element signature="e#2455#2456#0" expanded="false" />
+            <element signature="e#2483#2484#0" expanded="false" />
+            <element signature="e#2536#2537#0" expanded="false" />
+            <element signature="e#2576#2577#0" expanded="false" />
+            <element signature="e#2633#2634#0" expanded="false" />
+            <element signature="e#2676#2677#0" expanded="false" />
+            <element signature="e#2739#2740#0" expanded="false" />
+            <element signature="e#2787#2788#0" expanded="false" />
+            <element signature="e#2852#2853#0" expanded="false" />
+            <element signature="e#2901#2902#0" expanded="false" />
+            <element signature="e#2952#2953#0" expanded="false" />
+            <element signature="e#2996#2997#0" expanded="false" />
+            <element signature="e#3060#3061#0" expanded="false" />
+            <element signature="e#3112#3113#0" expanded="false" />
+            <element signature="e#3169#3170#0" expanded="false" />
+            <element signature="e#3206#3207#0" expanded="false" />
+            <element signature="e#3271#3272#0" expanded="false" />
+            <element signature="e#3315#3316#0" expanded="false" />
+            <element signature="e#3370#3371#0" expanded="false" />
+            <element signature="e#3409#3410#0" expanded="false" />
+            <element signature="e#3466#3467#0" expanded="false" />
+            <element signature="e#3511#3512#0" expanded="false" />
+            <element signature="e#3563#3564#0" expanded="false" />
+            <element signature="e#3608#3609#0" expanded="false" />
+            <element signature="e#3681#3682#0" expanded="false" />
+            <element signature="e#3730#3731#0" expanded="false" />
+            <element signature="e#3801#3802#0" expanded="false" />
+            <element signature="e#3848#3849#0" expanded="false" />
+            <element signature="e#3913#3914#0" expanded="false" />
+            <element signature="e#3962#3963#0" expanded="false" />
+            <element signature="e#4026#4027#0" expanded="false" />
+            <element signature="e#4079#4080#0" expanded="false" />
+            <element signature="e#4135#4136#0" expanded="false" />
+            <element signature="e#4184#4185#0" expanded="false" />
+            <element signature="e#4266#4267#0" expanded="false" />
+            <element signature="e#4319#4320#0" expanded="false" />
+            <element signature="e#4861#4862#0" expanded="false" />
+            <element signature="e#4906#4907#0" expanded="false" />
+            <element signature="e#4970#4971#0" expanded="false" />
+            <element signature="e#5022#5023#0" expanded="false" />
+            <element signature="e#5070#5071#0" expanded="false" />
+            <element signature="e#5109#5110#0" expanded="false" />
+            <element signature="e#5253#5254#0" expanded="false" />
+            <element signature="e#5303#5304#0" expanded="false" />
+            <element signature="e#5369#5370#0" expanded="false" />
+            <element signature="e#5423#5424#0" expanded="false" />
+            <element signature="e#5492#5493#0" expanded="false" />
+            <element signature="e#5547#5548#0" expanded="false" />
+            <element signature="e#5592#5593#0" expanded="false" />
+            <element signature="e#5632#5633#0" expanded="false" />
+            <element signature="e#5680#5681#0" expanded="false" />
+            <element signature="e#5721#5722#0" expanded="false" />
+            <element signature="e#5768#5769#0" expanded="false" />
+            <element signature="e#5810#5811#0" expanded="false" />
+            <element signature="e#5861#5862#0" expanded="false" />
+            <element signature="e#5907#5908#0" expanded="false" />
+            <element signature="e#5962#5963#0" expanded="false" />
+            <element signature="e#6012#6013#0" expanded="false" />
+            <element signature="e#6070#6071#0" expanded="false" />
+            <element signature="e#6121#6122#0" expanded="false" />
+            <element signature="e#6179#6180#0" expanded="false" />
+            <element signature="e#6230#6231#0" expanded="false" />
+            <element signature="e#6293#6294#0" expanded="false" />
+            <element signature="e#6340#6341#0" expanded="false" />
+            <element signature="e#6825#6826#0" expanded="false" />
+            <element signature="e#6874#6875#0" expanded="false" />
+            <element signature="e#6936#6937#0" expanded="false" />
+            <element signature="e#6986#6987#0" expanded="false" />
+            <element signature="e#7038#7039#0" expanded="false" />
+            <element signature="e#7081#7082#0" expanded="false" />
+            <element signature="e#7149#7150#0" expanded="false" />
+            <element signature="e#7192#7193#0" expanded="false" />
+            <element signature="e#7261#7262#0" expanded="false" />
+            <element signature="e#7305#7306#0" expanded="false" />
+            <element signature="e#7387#7388#0" expanded="false" />
+            <element signature="e#7449#7450#0" expanded="false" />
+            <element signature="e#8057#8058#0" expanded="false" />
+            <element signature="e#8100#8101#0" expanded="false" />
+            <element signature="e#8537#8538#0" expanded="false" />
+            <element signature="e#8593#8594#0" expanded="false" />
+            <element signature="e#8972#8973#0" expanded="false" />
+            <element signature="e#9018#9019#0" expanded="false" />
+            <element signature="e#10085#10086#0" expanded="false" />
+            <element signature="e#10128#10129#0" expanded="false" />
+            <element signature="e#14393#14394#0" expanded="false" />
+            <element signature="e#14442#14443#0" expanded="false" />
+            <element signature="e#14912#14913#0" expanded="false" />
+            <element signature="e#14963#14964#0" expanded="false" />
+            <element signature="e#16695#16696#0" expanded="false" />
+            <element signature="e#16745#16746#0" expanded="false" />
+            <element signature="e#16806#16807#0" expanded="false" />
+            <element signature="e#16852#16853#0" expanded="false" />
+            <element signature="e#17653#17654#0" expanded="false" />
+            <element signature="e#17694#17695#0" expanded="false" />
+            <element signature="e#17975#17976#0" expanded="false" />
+            <element signature="e#18026#18027#0" expanded="false" />
+            <element signature="e#22436#22437#0" expanded="false" />
+            <element signature="e#22476#22477#0" expanded="false" />
+            <element signature="e#22837#22838#0" expanded="false" />
+            <element signature="e#22880#22881#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/liran.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/splash_screen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.724138">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="21" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+          <folding>
+            <element signature="docComment;method#initializeNewCalendar#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initializeNewCalendar#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initializeEditText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initializeLayouts#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initializeTextViews#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initializeButtons#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initializeListeners#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initializeAdapters#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initializeClickListenerForFindADay#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#9622#9655#0" expanded="false" />
+            <element signature="method#markDateChanged#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#createExternalTransaction#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateDayOnCalendar#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateBalanceWithExternalTransaction#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateTotalsWithExternalExpenses#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#createDailyViewModel#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addToExternalTransaction#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getDataOnBackground#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#15738#15824#0" expanded="false" />
+            <element signature="method#createData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getDataFromRest#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateTotals#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateTotals#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateViewWithOnSelectedDate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getTextWIthDollar#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getDayWithMaxBalance#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getMockedTransactions#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#markDate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#unMarkDate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onDayClick#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#clearMarkFromPreviousDay#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onDailyTransactionClick#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#clearDailyTransactionDetails#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setPrice#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assets/loginscreen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assets/signin.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2413793">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/taru/taru/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.2068965">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1399#1668#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

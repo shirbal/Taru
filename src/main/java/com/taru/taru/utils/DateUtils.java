@@ -93,4 +93,20 @@ public class DateUtils {
     public static String getDateFromRep(String date) {
         return date.replace(".","/");
     }
+
+    public static long getDateAsMilli(String date) {
+        int day = DateUtils.getDay(date);
+        int month = DateUtils.getMonth(date);
+        int year = DateUtils.getYear(date);
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.DATE,day);
+        cal.set(Calendar.MONTH,month-1);
+        cal.set(Calendar.YEAR, year);
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        return cal.getTimeInMillis();
+    }
 }
