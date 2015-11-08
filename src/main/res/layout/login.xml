@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:clipChildren="false"
+    android:background="@color/blue"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -51,7 +52,7 @@
     <!--android:src="@drawable/liran"-->
     <ImageView
 
-        android:scaleType="fitXY"
+
         android:visibility="visible"
         android:id="@+id/login_back"
         android:layout_width="fill_parent"

@@ -1,6 +1,7 @@
 package com.taru.taru.citi.utils;
 
 
+import android.content.Context;
 import android.util.JsonReader;
 
 import com.taru.taru.models.Transaction;
@@ -40,11 +41,25 @@ public class RestApiCaller {
         return _caller;
     }
 
+    public List<Transaction> getData(Context con) {
+        List<Transaction> result = null;
+        String res = "";
+        try {
+            InputStream open = con.getAssets().open("input.txt");
+            res = readFromInputStream(res,open);
+            result = parseResponse(res);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    return result;
+    }
+
+
     public List<Transaction> getData(UrlCreator url, String method) {
 
         List<Transaction> res = null;
         try {
-            HttpURLConnection connection = APICreator.createConnection(method,url);
+            HttpURLConnection connection = APICreator.createConnection(method, url);
             connection.connect();
             int status = connection.getResponseCode();
             if (status == HttpURLConnection.HTTP_OK) {
@@ -89,23 +104,28 @@ public class RestApiCaller {
         String result = "";
         try {
             InputStream inputStream = connection.getInputStream();
-            if (inputStream != null) {
-                BufferedReader buff = new BufferedReader(new InputStreamReader(inputStream));
-                String inputLine = "";
-                StringBuilder res = new StringBuilder("");
-                try {
-                    while ((inputLine = buff.readLine()) != null) {
-                        res.append(inputLine);
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                result = res.toString();
-            }
+            result = readFromInputStream(result, inputStream);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        return result;
+    }
+
+    private String readFromInputStream(String result, InputStream inputStream) {
+        if (inputStream != null) {
+            BufferedReader buff = new BufferedReader(new InputStreamReader(inputStream));
+            String inputLine = "";
+            StringBuilder res = new StringBuilder("");
+            try {
+                while ((inputLine = buff.readLine()) != null) {
+                    res.append(inputLine);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            result = res.toString();
+        }
         return result;
     }
 

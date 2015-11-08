@@ -439,7 +439,8 @@ public class MainActivity extends Activity implements OnDayClickListener {
     private List<Transaction> getDataFromRest() {
         UrlCreator url = new UrlCreator();
         url.append(UrlCreator.TRANSACTINOS);
-        return RestApiCaller.getInstance().getData(url, APICreator.GET_METHOD);
+        return RestApiCaller.getInstance().getData(this);
+        //return RestApiCaller.getInstance().getData(url, APICreator.GET_METHOD);
     }
 
     /**
