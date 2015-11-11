@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:text="Shiran"
+
         android:id="@+id/daily_category"
         android:layout_weight="1"
         android:layout_width="fill_parent"
@@ -16,7 +16,7 @@
         android:layout_marginTop="5dp"/>
 
     <TextView
-        android:text="100"
+
         android:id="@+id/daily_amount"
         android:layout_weight="1"
         android:layout_height="fill_parent"

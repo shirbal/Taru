@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -30,14 +31,21 @@ public class LoginActivity extends Activity {
 
             InputStream open = getAssets().open("loginscreen.png");
             Bitmap bitmap = BitmapFactory.decodeStream(open);
-             img.setImageBitmap(bitmap);
+            img.setImageBitmap(bitmap);
+
+            Typeface lettersTypeface = Typeface.createFromAsset(getAssets(), "fonts/SourceSansPro/SourceSansPro-Regular.otf");
+
+            TextView  hideView  = (TextView)findViewById(R.id.hide_text);
+            hideView.bringToFront();
+            hideView.invalidate();
 
             EditText viewById = (EditText) findViewById(R.id.userNameText);
-
+            viewById.setTypeface(lettersTypeface);
             viewById.bringToFront();
             viewById.invalidate();
 
             viewById = (EditText) findViewById(R.id.password);
+            viewById.setTypeface(lettersTypeface);
             viewById.bringToFront();
             viewById.invalidate();
 

@@ -4,16 +4,23 @@
     android:clipChildren="false"
     android:background="@color/blue"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent" >
 
 
+
+    <TextView
+        android:id="@+id/hide_text"
+        android:layout_width="195dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/blue"/>
 
     <EditText
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="228dp"
         android:id="@+id/userNameText"
         android:textSize="15dp"
         android:textColor="@color/white"
@@ -25,8 +32,8 @@
     <EditText
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="277dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="273dp"
         android:id="@+id/password"
         android:textSize="15dp"
         android:textColor="@color/white"
@@ -42,38 +49,17 @@
         android:text="Sign in"
         android:gravity="center"
         android:textColor="@color/blue"
-        android:layout_width="208dp"
+        android:layout_width="185dp"
         android:layout_height="30dp"
-
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="384dp"
-        android:background="@color/white"
-        />
-    <!--android:src="@drawable/liran"-->
+        android:background="@color/white" />
+
     <ImageView
-
-
         android:visibility="visible"
         android:id="@+id/login_back"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
-
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignParentStart="true"-->
-
-
-        <!--<EditText-->
-
-            <!--android:layout_width="200dp"-->
-            <!--android:layout_height="40dp"-->
-            <!--android:layout_marginStart="76dp"-->
-            <!--android:layout_marginTop="240dp"-->
-            <!--android:backgroundTint="@color/transparent"-->
-            <!--android:id="@+id/upasswordText"-->
-            <!--android:textSize="10dp"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:foreground="@color/green" />-->
-
 
 
 </RelativeLayout>

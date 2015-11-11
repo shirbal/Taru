@@ -17,7 +17,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.taru.taru.citi.utils.APICreator;
 import com.taru.taru.citi.utils.RestApiCaller;
 import com.taru.taru.citi.utils.UrlCreator;
 import com.taru.taru.models.Transaction;
@@ -84,6 +83,9 @@ public class MainActivity extends Activity implements OnDayClickListener {
     private Typeface numbersTypeface;
     private Typeface lettersTypeface;
     private boolean _foundADay = false;
+
+    private Pair<Integer,Integer> _selectedMonth;
+
     private com.taru.taru.vdesmet.lib.calendar.CalendarView singleMonth;
 
 
@@ -154,9 +156,18 @@ public class MainActivity extends Activity implements OnDayClickListener {
         _mainLayout = (LinearLayout) findViewById(R.id.main_layout);
         _progressBarLayout = (LinearLayout) findViewById(R.id.progress_bar_layout);
         _enterAmountLayout = (LinearLayout) findViewById(R.id.enter_amount_layout);
-        _monthTotalsLayout = (LinearLayout) findViewById(R.id.month_header_layout);
-        _monthHeaderLayout = (LinearLayout) findViewById(R.id.totals_layout);
+        _monthTotalsLayout = (LinearLayout) findViewById(R.id.totals_layout);
+        _monthTotalsLayout.bringToFront();
+        _monthTotalsLayout.invalidate();
+
+        _monthHeaderLayout = (LinearLayout) findViewById(R.id.month_header_layout);
+        _monthHeaderLayout.bringToFront();
+        _monthHeaderLayout.invalidate();
         _enterAmountDailyLayout = (LinearLayout) findViewById(R.id.enter_amount_daily_layout);
+
+        ImageView img = (ImageView)findViewById(R.id.header_img);
+        img.invalidate();
+
     }
 
     private void initializeTextViews() {
@@ -381,7 +392,7 @@ public class MainActivity extends Activity implements OnDayClickListener {
             new Thread(new Runnable() {
                 public void run() {
                     try {
-                        Thread.sleep(3000);
+                        Thread.sleep(5000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -423,7 +434,7 @@ public class MainActivity extends Activity implements OnDayClickListener {
          * update the view models to display the list of transaction
          */
         List<Transaction> data = getDataFromRest();
-
+        updateSelectedMonth();
         if (data != null) {
             /**
              * update the total views
@@ -432,8 +443,12 @@ public class MainActivity extends Activity implements OnDayClickListener {
             /**
              * Update the map before displaying it
              */
-            TransactionUtil.updateDaysToTransactionMap(data, _daysToTransactions, _dateToBalance);
+            TransactionUtil.updateDaysToTransactionMap(data, _daysToTransactions, _dateToBalance,_selectedMonth);
         }
+    }
+
+    private void updateSelectedMonth() {
+        _selectedMonth = new Pair<>(9,2015);
     }
 
     private List<Transaction> getDataFromRest() {
@@ -499,25 +514,6 @@ public class MainActivity extends Activity implements OnDayClickListener {
                 max = next.getValue();
             }
         }
-        return result;
-    }
-
-    private List<Transaction> getMockedTransactions() {
-        List<Transaction> result = new ArrayList<>();
-        result.add(new Transaction("Groceries", "9/1/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/3/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/4/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/7/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/8/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/10/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/14/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/15/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/16/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/21/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/23/2015", 100.0, TransactionType.OUT));
-        result.add(new Transaction("Groceries", "9/25/2015", 100.0, TransactionType.OUT));
-
-
         return result;
     }
 

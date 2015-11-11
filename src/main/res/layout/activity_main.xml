@@ -5,13 +5,12 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
-
     <LinearLayout
         android:id="@+id/progress_bar_layout"
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         android:touchscreenBlocksFocus="true">
 
         <LinearLayout
@@ -48,16 +47,181 @@
 
     </LinearLayout>
 
-
     <LinearLayout
-        android:visibility="visible"
+        android:visibility="invisible"
         android:id="@+id/main_layout"
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/month_header_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="31dp"
+
+                android:orientation="horizontal"
+                android:baselineAligned="true">
+
+                <TextView
+                    android:id="@+id/month_header_month"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="September"
+                    android:textSize="15dp"
+                    android:autoText="false"
+                    android:layout_weight="1"
+                    android:background="#0a98f4"
+                    android:textColor="@color/white"
+                    android:typeface="normal"
+                    android:gravity="center_vertical|right" />
+                <TextView
+                    android:id="@+id/month_header_year"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="2015"
+                    android:textSize="15dp"
+                    android:autoText="true"
+                    android:layout_weight="1"
+                    android:background="#0a98f4"
+                    android:textColor="@color/white"
+                    android:typeface="normal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:id="@+id/totals_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                >
+                <!--android:backgroundTint="@color/white"-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+
+                    android:layout_weight="1.5"
+
+                    android:baselineAligned="true"
+                    android:gravity="left">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="End of Month Balance"
+                        android:layout_weight="1"
+                        android:textSize="11dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#282828"
+                        android:id="@+id/total_balance_header" />
+
+                    <TextView
+                        android:id="@+id/total_balance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+
+                        android:layout_weight="1"
+                        android:textSize="13dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="#000000"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Total Expenses"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="#e95b47"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/total_expenses_header" />
+
+                        <TextView
+                            android:id="@+id/total_expenses"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textSize="15dp"
+                            android:textColor="#e95b47"
+                            android:layout_weight="2"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Total Income"
+                            android:layout_weight="1"
+                            android:textColor="#2dbe9b"
+                            android:textSize="12dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/total_income_header" />
+
+                        <TextView
+                            android:id="@+id/total_income"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textColor="#2dbe9b"
+                            android:textSize="15dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/header_img"
+                android:scaleType="fitXY"
+                android:src="@drawable/headerres"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp" />
+
+
+        </RelativeLayout>
+
         <LinearLayout
-            android:id="@+id/month_header_layout"
+            android:visibility="gone"
+            android:id="@+id/month_header_layout_shiran"
             android:layout_width="fill_parent"
             android:layout_height="45dp"
             android:background="@color/blue"
@@ -65,7 +229,7 @@
             android:baselineAligned="true">
 
             <TextView
-                android:id="@+id/month_header_month"
+                android:id="@+id/month_header_month_shiran"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:text="September"
@@ -77,7 +241,7 @@
                 android:typeface="normal"
                 android:gravity="center_vertical|right" />
             <TextView
-                android:id="@+id/month_header_year"
+                android:id="@+id/month_header_year_shiran"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:text="2015"
@@ -92,11 +256,9 @@
 
         </LinearLayout>
 
-
-
-
         <LinearLayout
-            android:id="@+id/totals_layout"
+            android:visibility="gone"
+            android:id="@+id/totals_layout_shiran"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:orientation="horizontal"
@@ -120,10 +282,10 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:textColor="#282828"
-                    android:id="@+id/total_balance_header" />
+                    android:id="@+id/total_balance_header_shiran" />
 
                 <TextView
-                    android:id="@+id/total_balance"
+                    android:id="@+id/total_balance_shiran"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
 
@@ -157,10 +319,10 @@
                         android:textColor="#e95b47"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="5dp"
-                        android:id="@+id/total_expenses_header" />
+                        android:id="@+id/total_expenses_header_shiran" />
 
                     <TextView
-                        android:id="@+id/total_expenses"
+                        android:id="@+id/total_expenses_shiran"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:textSize="15dp"
@@ -187,10 +349,10 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginLeft="5dp"
-                        android:id="@+id/total_income_header" />
+                        android:id="@+id/total_income_header_shiran" />
 
                     <TextView
-                        android:id="@+id/total_income"
+                        android:id="@+id/total_income_shiran"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:textColor="#2dbe9b"
@@ -204,11 +366,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-
-
-
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -227,20 +384,6 @@
 
                 android:layout_height="fill_parent"
                 android:background="@color/white" />
-
-            <!--<CalendarView-->
-                <!--android:id="@+id/calendar"-->
-                <!--android:layout_height="fill_parent"-->
-                <!--android:layout_width="fill_parent"-->
-
-                <!--android:background="@color/gray_light"-->
-                <!--android:longClickable="true"-->
-                <!--style="@style/shiran" />-->
-
-            <!--<ListView-->
-            <!--android:id="@+id/listView1"-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="fill_parent" />-->
 
         </LinearLayout>
 
@@ -314,9 +457,11 @@
                 <ListView
                     android:id="@+id/daily_list"
                     android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="vertical"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
-                    android:layout_height="fill_parent"></ListView>
+
+                    android:layout_height="fill_parent"/>
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -344,7 +489,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
 
 
         </LinearLayout>
@@ -424,7 +568,6 @@
 
 
         </LinearLayout>
-
 
         <LinearLayout
             android:id="@+id/enter_amount_daily_layout"
@@ -533,6 +676,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>

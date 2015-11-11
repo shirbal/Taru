@@ -8,38 +8,6 @@ import java.util.Calendar;
  */
 public class DateUtils {
 
-    public static int getNextMonth() {
-        int currentMonth = getCurrentMonth() + 2;
-        int nextMonth = (currentMonth == 13) ? 1 : currentMonth;
-        return nextMonth;
-    }
-
-    public static int getCurrentMonth() {
-        return Calendar.getInstance().get(Calendar.MONTH);
-    }
-
-    public static int getTargetYear(int targetMonth) {
-        int currentYearTemp = getCurrentYear();
-        return (targetMonth == 1) ? currentYearTemp + 1 : currentYearTemp;
-    }
-
-    public static int getCurrentYear() {
-        int year = Calendar.getInstance().get(Calendar.YEAR);
-        return year;
-    }
-
-    public static String createDateFromDay(Integer day) {
-        int month = getNextMonth();
-        int year = getTargetYear(month);
-        StringBuilder str = new StringBuilder();
-        str.append(month);
-        str.append("/");
-        str.append(day);
-        str.append("/");
-        str.append(year);
-        return str.toString();
-    }
-
     public static String createDateAsString(int year, int month, int day) {
         return month + "/" + day + "/" + year;
     }
@@ -75,6 +43,14 @@ public class DateUtils {
     public static int getMonth(String date) {
         String[] split = date.split("/");
         return Integer.valueOf(split[0]);
+    }
+
+    public static int numberOfDays(int month, int year) {
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.MONTH,month-1);
+        cal.set(Calendar.YEAR, year);
+        int result = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+        return result;
     }
 
     public static int numberOfDays(String date) {
